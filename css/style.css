@@ -1,7 +1,7 @@
 @font-face
 {
 	font-family: "Lavanderia Sturdy";
-	src: url('lavanderia_sturdy.otf') format('opentype'), url('lavanderia_sturdy.woff') format('woff');
+	src: url('../lavanderia_sturdy.otf') format('opentype'), url('../lavanderia_sturdy.woff') format('woff');
 }
 
 * {
