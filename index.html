@@ -1,3 +1,66 @@
+<!DOCTYPE html>
 <html>
-Hello, World!
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet">
+
+	<title>Forrest Bourke</title>
+
+</head>
+
+<body>
+	<div id="nav" data-edge-strategy="set" data-0="transform:translate(200%,0%);" data-100="transform:translate(0%,0%)">
+		<div id="edge"><img src="img/nav1.png"></div>
+		<ul>
+			<li><a href="#top">Home</a></li>
+			<li><a href="#s2">Confectionery Cannon</a></li>
+			<li><a href="#s3">Tesla Coil</a></li>
+		</ul>
+	</div>
+
+	<div id="top" data-100="transform:translate(0,0%);" data-200p="transform:translate(0,-100%);" class="home">
+		<h1 id="forrest">Forrest</h1>
+		<h1 id="bourke">Bourke</h1>
+	</div>
+
+	<div id="s2" data-100="transform:translate(0,100%);" data-200p="transform:translate(0,0%)" data-_box-250p="" data-_box-350p="transform:translate(0,-100%)">
+		<img src="img/red-arrow.png" id="arrow">
+		<div class="box" data-250p="width:0%;" data-_box-250p="width:100%"> 
+			<h2 id="cc">The&nbsp;Confectionery&nbsp;Cannon</h2>
+		</div>
+	</div>
+
+	<div id="s3" class="cannon-text" data-100="transform:translate(50%,300%);" data-200p="transform:translate(50%,30%)" data-_box-250p="" data-_box-350p="transform:translate(50%,-300%)">
+		<h3>Marshmallow Launching</h3>
+	</div>
+
+	<div id="s3" class="cannon-text" data-100="transform:translate(40%,200%);" data-200p="transform:translate(40%,50%)" data-_box-250p="" data-_box-350p="transform:translate(40%,-200%)">
+		<h3>Face Tracking</h3>
+	</div>
+
+	<div id="s3" class="cannon-text" data-100="transform:translate(-50%,40%);" data-300p="transform:translate(15%,40%)" data-_box-250p="" data-_box-350p="transform:translate(15%,-200%)">
+		<h3 id="see-it">See it <a style="color:inherit;" href="http://confectionerycannon.com/">here</a></h3>
+	</div>
+
+	<div id="end" data-_box-250p="transform:translate(0,100%);" data-_box-350p="transform:translate(0,0%);">
+		hello
+	</div>
+
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+
+	<script type="text/javascript">
+	skrollr.init({
+		constants: {
+			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
+			//adjust for shorter/longer pause
+			box: 150
+		}
+	});
+	</script>
+</body>
+
 </html>
