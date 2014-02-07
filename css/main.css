@@ -332,6 +332,10 @@ label.valid {
     border: solid thin #fff;
     padding: 3px 5px;
 }
+.skill-percents {
+    margin:0 auto;
+    float:none;
+}
 .chart {
     position: relative;
     display: inline-block;
