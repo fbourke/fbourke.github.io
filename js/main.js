@@ -4,6 +4,7 @@ $(document).ready(function () {
         backgrounds:[
           { src:'img/endmill_dof2.jpg', fade:1000 },
           { src:'img/gainclone_top2.jpg', fade:1000 },
+          { src:'img/quad_flying2.jpg', fade:1000 },
           { src:'img/forrest_cornering2.jpg', fade:1000 }
         ]
     })('overlay', {
