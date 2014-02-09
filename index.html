@@ -68,7 +68,7 @@
                         <a href="#page-skills" class="btn btn-round btn-clear btn-arrow"><i class="fa fa-arrow-down"></i></a>
                     
                 </div>
-                <a href="#page-contact" class="btn btn-default hire-me">Hire Me</a>
+                <!-- <a href="#page-contact" class="btn btn-default hire-me">Hire Me</a> -->
             </div>
         </div>
     </section><!-- welcome -->
@@ -142,10 +142,12 @@
                       <li class="mix electrical" >
                        <a data-toggle="modal" data-target="#power"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/power/power03s.jpg" alt="" >
                       </a> </li>
-                      <li class="mix design">
-                        <a href="img/portfolio/large/03.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/03.png" alt="" ></a></li>
-                      <li class="mix web">
-                        <a href="img/portfolio/large/04.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/04.png" alt="" ></a></li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#rwm"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/rwm/rwm01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical mechanical" >
+                       <a data-toggle="modal" data-target="#scanner"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/scanner/scanner01s.jpg" alt="" >
+                      </a> </li>
                       <li class="mix branding">
                         <a href="img/portfolio/large/05.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/05.png" alt="" ></a></li>
                       <li class="mix design">
@@ -207,7 +209,49 @@
                     </div>
                     <div class="modal-body">
                       <a href="img/portfolio/power/power02.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/power/power02s.jpg" alt="" /></a>
-                      <p>I've made a couple power amplifiers, the first was free-soldered with the LM3886 chip. I used free samples from National Semiconductor (before it was acquired by TI) to build it and most subsequent amplifiers. To get the free samples, I made a domain, forrest.doesntexist.com (now defunct), and created emails for sample accounts. For my second power amplifier, I designed a PCB and sent it to <a href="https://oshpark.com/" target="_blank">OSH Park</a> for fabrication.
+                      <p>I've made a of couple power amplifiers - the first was free-soldered with the LM3886 chip. I used free samples from National Semiconductor (before it was acquired by TI) to build it and most subsequent amplifiers. To get the free samples, I acquired a free domain, and set up emails for sample accounts. For my second power amplifier, I designed a PCB for the LM4780 and sent it to <a href="https://oshpark.com/" target="_blank">OSH Park</a> for fabrication. The second power amp is housed in a laser-cut baltic birch case, with a LED-illuminated laser-engraved acrylic faceplate and a 21-step attenuator for better channel balance than a standard potentiometer. Most of my power amplifiers have been powered by toroidal transformers, acquired at my favorite surplus store, <a href="http://www.apexelectronic.com/" target="_blank">Apex Electronics</a> in Sun Valley, CA.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="rwm" tabindex="-1" role="dialog" aria-labelledby="rwm" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/rwm/rwm01w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Laser Rangefinder (Spring 2013)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/rwm/rwm02.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/rwm/rwm02s.jpg" alt="" /></a>
+                      <p>For Olin's <a href="rwm.olin.edu" target="_blank">Real World Measurements</a> class, a team and I designed the optics and circuitry for a laser rangefinder. It was designed to send out a pulse from an infrared laser, then measure the time it takes for the pulse to be returned and detected using a photodiode. Avalanche photodiodes are commonly used for this, as they have high gain and fast response times, but our budget did not allow us to use an avalanche photodiode. We used a 22μS-resolution timer chip, and the team had to learn to use Olin's reflow oven to solder the QFN package. Unfortunately, the project failed due to problems with the firmware, as well as optical alignment issues.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="scanner" tabindex="-1" role="dialog" aria-labelledby="scanner" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/scanner/scanner03w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">3D Scanner (Fall 2013)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/scanner/scanner04.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/scanner/scanner04s.jpg" alt="" /></a>
+                      <p>In Principles of Engineering, before doing the <a href="confectionerycannon.com">final project</a>, I made a 3D scanner with a partner.  
                       </p>
                     </div>
                     <div class="modal-footer">

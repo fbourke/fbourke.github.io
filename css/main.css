@@ -272,6 +272,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100px;
     height: 2px;
     margin: auto;
+    background: #161C92;
+    color: #161C92;
 }
 .section-subtitle {
     text-align: center;
