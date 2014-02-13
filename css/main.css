@@ -111,6 +111,13 @@ h1, h2, h3, h4, h5, h6 {
 #page-contact .contact-info p {
     font-size: 1.2em;
 }
+.page-contact {
+    background-color: #161C92;
+    color: #fff;
+}
+.page-contact h2 {
+    color: #fff;
+}
 #grid-controls-wrapper {
     text-align: center;
     float: none;
