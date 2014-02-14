@@ -282,6 +282,10 @@ h1, h2, h3, h4, h5, h6 {
     background: #161C92;
     color: #161C92;
 }
+.contact-spacer {
+    background: #fff;
+    color: #fff;
+}
 .section-subtitle {
     text-align: center;
     padding: 30px 0;
@@ -344,6 +348,10 @@ label.valid {
 .skill-percents {
     margin:0 auto;
     float:none;
+}
+.issue-row {
+    padding-top: 60px;
+    magin-bottom: -40px;
 }
 .chart {
     position: relative;

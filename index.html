@@ -73,45 +73,47 @@
        <!-- skills -->
      <section id="page-skills" class="page-skills">
        <div class="container skill-percents">
-           
-                 <header class="section-header">
-                    <h2 class="section-title"><span>Skills</span></h2>
-                      <div class="spacer"></div>
-                    <p class="section-subtitle">NOTE: This website is still under construction. This skills section is pointless and gives no real information--I just like the spinning pie charts.  </p>
-                </header>
-            <div class="row">
-              <div class="col-md-2 col-md-offset-1">
-               <span class="chart" data-percent="38">
-                      <span class="percent"></span>
-                      <h3>3/8 Semesters</h3>
-               </span>
-            </div>
-               <div class="col-md-2 ">
-               <span class="chart" data-percent="60">
-                      <span class="percent"></span>
-                      <h3>Python</h3>
-               </span>
-            </div>
-               <div class="col-md-2">
-               <span class="chart" data-percent="75">
-                      <span class="percent"></span>
-                       <h3>HTML/CSS</h3>
-               </span>
-            </div>
-               <div class="col-md-2">
-               <span class="chart" data-percent="85">
-                      <span class="percent"></span>
-                      <h3>GTAW/TIG Welding</h3>
-               </span>
-               </div>
-               <div class="col-md-2">
-               <span class="chart" data-percent="110">
-                      <span class="percent"></span>
-                       <h3>Meaningless Metrics</h3>
-               </span>
-            </div>
+         <header class="section-header">
+            <h2 class="section-title"><span>Skills</span></h2>
+              <div class="spacer"></div>
+            <p class="section-subtitle">NOTE: This website is still under construction. This skills section is pointless and gives no real information--I just like the spinning pie charts.  </p>
+        </header>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-1">
+            <span class="chart" data-percent="37.5" data-places="1">
+              <span class="percent"></span>
+              <h3>Undergraduate Education Completed</h3>
+            </span>
+          </div>
+          <div class="col-md-2 ">
+          <span class="chart" data-percent="0.0977" data-places="4">
+            <span class="percent"></span>
+            <h3>Probability of Death*</h3>
+          </span>
+          </div>
+          <div class="col-md-2">
+          <span class="chart" data-percent="75" data-places="0">
+            <span class="percent"></span>
+            <h3>HTML/CSS</h3>
+          </span>
+          </div>
+          <div class="col-md-2">
+          <span class="chart" data-percent="85" data-places="0">
+            <span class="percent"></span>
+            <h3>GTAW/TIG Welding</h3>
+          </span>
+          </div>
+          <div class="col-md-2">
+          <span class="chart" data-percent="110" data-places="0">
+            <span class="percent"></span>
+            <h3>Meaningless Metrics</h3>
+          </span>
           </div>
         </div>
+        <div class="row issue-row">
+          <p>*According to Social Security Administration actuarial tables</p>
+        </div>
+    </div>
     </section><!-- skills -->
     <!-- portfolio begins -->
     <section id="page-portfolio" class="page-portfolio">
@@ -120,7 +122,7 @@
                 <header class="section-header">
                     <h2 class="section-title"><span>Portfolio</span></h2>
                       <div class="spacer"></div>
-                    <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                    <p class="section-subtitle">Here are a few projects I've worked on. Click any of them for more pictures and a short description.</p>
                 </header>
            
                 <div id="grid-controls-wrapper">
@@ -287,8 +289,8 @@
       <div class="container">
         <header class="section-header">
           <h2 class="section-title"><span>Contact</span></h2>
-            <div class="spacer"></div>
-              <p class="section-subtitle">You can contact me here! </p>
+            <div class="spacer contact-spacer"></div>
+              <p class="section-subtitle" id="contact-subtitle">You can contact me here! </p>
         </header>
         <div class="row">
           <div class="col-sm-5 contact-info">
@@ -300,7 +302,7 @@
           
           <div class="col-sm-7">
             <h3>Get in Touch</h3>
-            <form  class="form-horizontal" id="contact-form">
+            <form  class="form-horizontal" id="contact-form" target="_parent" onSubmit="return false;">
               <div class="control-group">
                 <label class="control-label" for="name">Name</label>
                 <div class="controls">
@@ -320,7 +322,7 @@
                 </div>
               </div>
               <div class="form-actions">
-                <button type="submit" class="btn btn-default btn-lg btn-block">Submit Message</button>
+                <button type="submit" class="btn btn-default btn-lg btn-block" id="contact-submit">Submit Message</button>
               </div>
             </form>
           </div>

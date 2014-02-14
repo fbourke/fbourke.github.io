@@ -19,6 +19,7 @@ $(document).ready(function () {
         $("ul.nav-pills li.active").removeClass("active"), $(this).parent("li").addClass("active")
     });
 
+
     $(".chart").waypoint(function () {
         $(this).easyPieChart({
                 easing: 'easeInOutExpo',
@@ -26,7 +27,7 @@ $(document).ready(function () {
                 barColor: "#161C92",
                 size: "150",
                 onStep: function(from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
+                    $(this.el).find('.percent').text(parseFloat(percent).toFixed($(this.el).data('places')));
                 }
         });
         var chart = window.chart = $('.chart').data('easyPieChart');
@@ -47,27 +48,58 @@ $(document).ready(function () {
         });
     });
 
-    $(window).load(function () {
-        var e = $(".grid-wrapper");
-        e.isotope({
-            filter: "*",
-            animationOptions: {
-                duration: 750,
-                easing: "linear",
-                queue: !1
-            }
-        }), $(".grid-controls li a").click(function () {
-            $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
-            var i = $(this).attr("data-filter");
-            return e.isotope({
-                filter: i,
-                animationOptions: {
-                    duration: 750,
-                    easing: "linear",
-                    queue: !1
-                }
-            }), !1
-        })
+    // $(window).load(function () {
+    //     var e = $(".grid-wrapper");
+    //     e.isotope({
+    //         filter: "*",
+    //         animationOptions: {
+    //             duration: 750,
+    //             easing: "linear",
+    //             queue: !1
+    //         }
+    //     }), $(".grid-controls li a").click(function () {
+    //         $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
+    //         var i = $(this).attr("data-filter");
+    //         return e.isotope({
+    //             filter: i,
+    //             animationOptions: {
+    //                 duration: 750,
+    //                 easing: "linear",
+    //                 queue: !1
+    //             }
+    //         }), !1
+    //     })
+    // });
+
+    // $("#contact-form").validate({
+    //     rules: {
+    //         name: {
+    //             minlength: 2,
+    //             required: !0
+    //         },
+    //         email: {
+    //             required: !0,
+    //             email: !0
+    //         },
+    //         message: {
+    //             minlength: 2,
+    //             required: !0
+    //         }
+    //     },
+    //     highlight: function (e) {
+    //         $(e).closest(".control-group").removeClass("success").addClass("error")
+    //     },
+    //     success: function (e) {
+    //         e.text("OK!").addClass("valid").closest(".control-group").removeClass("error").addClass("success")
+    //     }
+    //  });
+    $('#contact-form').click(function(){ 
+        $('#contact-subtitle').fadeOut( "fast", function() {
+            $('#contact-subtitle').html('This form does literally nothing.');
+            $('#contact-subtitle').css('color','#F00');
+            $('#contact-subtitle').fadeIn( "slow", function() {});
+        });
+        //alert('hello');
     });
 });
     // $(".hire-me").click(function () {
