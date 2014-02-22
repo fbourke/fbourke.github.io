@@ -438,7 +438,7 @@ label.valid {
 .btn-resume:hover {
     color: #161C92;
 }
-.btn-arrow:hover {
+.btn.btn-arrow.selected, .btn.btn-arrow:hover {
 	-webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
