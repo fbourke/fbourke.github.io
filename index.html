@@ -38,8 +38,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav" id="main-menu">
             <li><a href="#page-welcome">Home</a></li>
-            <li><a href="#page-profile">Profile</a></li>
-            <li><a href="#page-skills">Skills</a></li>
+           <!--  <li><a href="#page-profile">Profile</a></li> -->
+            <li><a href="#page-skills">Metrics</a></li>
             <li><a href="#page-portfolio">Portfolio</a></li>
             <li><a href="#page-contact">Contact</a></li>
           </ul>
@@ -74,9 +74,9 @@
      <section id="page-skills" class="page-skills">
        <div class="container skill-percents">
          <header class="section-header">
-            <h2 class="section-title"><span>Skills</span></h2>
+            <h2 class="section-title"><span>Metrics</span></h2>
               <div class="spacer"></div>
-            <p class="section-subtitle">NOTE: This website is still under construction. This skills section is pointless and gives no real information--I just like the spinning pie charts.  </p>
+            <p class="section-subtitle">NOTE: This website is still under construction. I just like the spinning pie charts.  </p>
         </header>
         <div class="row">
           <div class="col-md-2 col-md-offset-1">
@@ -153,6 +153,9 @@
                       </a> </li>
                       <li class="mix electrical mechanical" >
                        <a data-toggle="modal" data-target="#shop"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/shop/shop01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical mechanical" >
+                       <a data-toggle="modal" data-target="#cannon"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/cannon/cannon01s.jpg" alt="" >
                       </a> </li>
                   </ul>
                 </div>
@@ -270,12 +273,44 @@
                   <img class="img-responsive portfolio-description-imge" src="img/portfolio/shop/shop04w.jpg" alt="" />
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title" id="myModalLabel">shop</h4>
+                      <h4 class="modal-title" id="myModalLabel">Machine Shop Projects</h4>
                     </div>
                     <div class="modal-body">
                       <a href="img/portfolio/shop/shop03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/shop/shop03s.jpg" alt="" /></a>
                       <p>For an electrical engineer, I've spent quite a bit of time in the machine shop. I used a combination of brazing and TIG welding turn hammered sheets of copper into a rose. The widget in the preview image is turned from aluminium; instead of using a die to make the threads on the front, I used a single-point threading tool and the gearing on the lathe to make the threads.
                       </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="cannon" tabindex="-1" role="dialog" aria-labelledby="cannon" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/cannon/cannon04w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">The Confectionery Cannon (Fall 2013)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/cannon/cannon03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/cannon/cannon03s.jpg" alt="" /></a>
+                      <p>With a team of four, I built a face-tracking pneumatic marshmallow launcher. It uses OpenCV and Python to find faces, then comminicates with a microcontroller to fire the marshmallows and reload itself. You can read more at <a target="_blank" href="http://confectionerycannon.com">confectionerycannon.com</a>.</p>
+                      <p>We've been featured on 
+                      <ul>
+                        <li><a href="tinyurl.com/ccannon-hackaday">Hackaday</a></li>
+                        <li><a href="tinyurl.com/ccannon-gizmodo">Gizmodo</a></li>
+                        <li><a href="http://watch.discoverychannel.ca/#clip1063900">Discovery Channel Canada on TV</a></li>
+                        <li><a href="http://news.discovery.com/tech/gear-and-gadgets/bullseye-face-tracking-marshmallow-cannon-140114.htm">Discovery Channel USA</a></li>
+                        <li><a href="http://www.foxnews.com/tech/2014/01/15/why-google-paid-billions-for-nest/">Fox News</a></li>
+                        <li><a href="http://www.bostonmagazine.com/news/blog/2014/01/14/olin-college-confectionery-cannon-video/">Boston Magazine</a></li>
+                        <li><a href="http://www.geek.com/news/face-tracking-confectionery-cannon-delivers-the-goods-with-135psi-1582675/">Geek.com</a></li>
+                        <li><a href="https://atmelcorporation.wordpress.com/2014/01/15/video-this-confectionery-cannon-fires-marshmallows">Atmel Embedded Design Blog</a></li>
+                        <li><a href="http://thenextweb.com/shareables/2014/01/20/four-students-built-face-tracking-marshmallow-cannon/#!wZMPg">The Next Web</a></li>
+                      </ul></p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
