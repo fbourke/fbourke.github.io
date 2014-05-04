@@ -91,7 +91,23 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 23108,
+				"buffer_size": 26843,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/fbourke/Downloads/BluesPhotos.ics",
+			"settings":
+			{
+				"buffer_size": 3074,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/fbourke/Documents/S2014/sigsys/project/SigSys-Music-Visualization/python/signal.py",
+			"settings":
+			{
+				"buffer_size": 1769,
 				"line_ending": "Unix"
 			}
 		},
@@ -124,7 +140,7 @@
 			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 14422,
+				"buffer_size": 14451,
 				"line_ending": "Unix"
 			}
 		}
@@ -156,6 +172,8 @@
 	},
 	"file_history":
 	[
+		"/home/fbourke/Documents/S2014/sigsys/project/SigSys-Music-Visualization/python/signal.py",
+		"/home/fbourke/Downloads/photos.ics",
 		"/home/fbourke/Documents/other/makemit/droideka/droideka/droideka.ino",
 		"/home/fbourke/Documents/other/makemit/droideka/droideka.ino",
 		"/home/fbourke/Documents/F2013/POE/confectionerycannon/site/confectonerycannon/carousel.css",
@@ -233,6 +251,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"shop",
 			"portfol",
 			"contact",
 			"color",
@@ -371,7 +390,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -380,15 +399,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23108,
+						"buffer_size": 26843,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4850,
-								4850
+								26436,
+								26436
 							]
 						],
 						"settings":
@@ -398,14 +417,71 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1440.0,
+						"translation.y": 7236.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/fbourke/Downloads/BluesPhotos.ics",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1296.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/fbourke/Documents/S2014/sigsys/project/SigSys-Music-Visualization/python/signal.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								416,
+								416
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 3,
 					"file": "css/bootstrap.css",
 					"semi_transient": false,
 					"settings":
@@ -431,11 +507,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "css/portfolio.css",
 					"semi_transient": false,
 					"settings":
@@ -462,11 +538,11 @@
 						"translation.y": 121498.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "js/main.js",
 					"semi_transient": false,
 					"settings":
@@ -492,24 +568,24 @@
 						"translation.y": 1296.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "css/main.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14422,
+						"buffer_size": 14451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7794,
-								7794
+								0,
+								0
 							]
 						],
 						"settings":
@@ -522,7 +598,7 @@
 						"translation.y": 5400.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
