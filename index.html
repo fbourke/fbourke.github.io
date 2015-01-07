@@ -348,6 +348,26 @@
                   </div>
                 </div>
           </div><!-- end modal -->
+          <div class="modal fade" id="up" tabindex="-1" role="dialog" aria-labelledby="up" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/up/up01w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Jawbone Intern, Advanced Projects Division</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>As an intern on Jawbone's Advanced Projects team, I assited with testing and bring up of the revolutionary bioimpedance sensors in the <a href="http://jawbone.com/store/buy/up3">UP3</a> in addition to other responsibilites 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
     </section><!-- portfolio ends -->
     <!-- contact begins -->
     <section id="page-contact" class="page-contact">
@@ -355,7 +375,7 @@
         <header class="section-header">
           <h2 class="section-title"><span>Contact</span></h2>
             <div class="spacer contact-spacer"></div>
-              <p class="section-subtitle" id="contact-subtitle">You can contact me here! </p>
+              <p class="section-subtitle" id="contact-subtitle"></p>
         </header>
         <div class="row">
           <div class="col-sm-5 contact-info">
@@ -366,30 +386,32 @@
           </div>
           
           <div class="col-sm-7">
-            <h3>Get in Touch</h3>
-            <form  class="form-horizontal" id="contact-form" target="_parent" onSubmit="return false;">
-              <div class="control-group">
-                <label class="control-label" for="name">Name</label>
-                <div class="controls">
-                    <input type="text" name="name" id="name" placeholder="Your name" class="form-control input-lg ">
+            <div id="contact-replacement">
+              <h3 id="contact-form-thing-1">Get in Touch</h3>
+              <form  class="form-horizontal" id="contact-form" target="_parent" onSubmit="return false;">
+                <div class="control-group">
+                  <label class="control-label" for="name">Name</label>
+                  <div class="controls">
+                      <input type="text" name="name" id="name" placeholder="Your name" class="form-control input-lg ">
+                  </div>
                 </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label" for="email">Email Address</label>
-                <div class="controls">
-                    <input type="text" name="email" id="email" placeholder="Your email address" class="form-control input-lg">
+                <div class="control-group">
+                  <label class="control-label" for="email">Email Address</label>
+                  <div class="controls">
+                      <input type="text" name="email" id="email" placeholder="Your email address" class="form-control input-lg">
+                  </div>
                 </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label" for="message">Message</label>
-                <div class="controls">
-                    <textarea name="message" id="message" rows="8" class="form-control input-lg"></textarea>
+                <div class="control-group">
+                  <label class="control-label" for="message">Message</label>
+                  <div class="controls">
+                      <textarea name="message" id="message" rows="8" class="form-control input-lg"></textarea>
+                  </div>
                 </div>
-              </div>
-              <div class="form-actions">
-                <button type="submit" class="btn btn-default btn-lg btn-block" id="contact-submit">Submit Message</button>
-              </div>
-            </form>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-default btn-lg btn-block" id="contact-submit">Submit Message</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div><!-- End row -->
       </div>

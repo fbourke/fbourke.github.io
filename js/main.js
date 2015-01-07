@@ -49,28 +49,28 @@ $(document).ready(function () {
         });
     });
 
-    $(window).load(function () {
-        var e = $(".grid-wrapper");
-        e.isotope({
-            filter: "*",
-            animationOptions: {
-                duration: 750,
-                easing: "linear",
-                queue: !1
-            }
-        }), $(".grid-controls li a").click(function () {
-            $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
-            var i = $(this).attr("data-filter");
-            return e.isotope({
-                filter: i,
-                animationOptions: {
-                    duration: 750,
-                    easing: "linear",
-                    queue: !1
-                }
-            }), !1
-        })
-    });
+    // $(window).load(function () {
+    //     var e = $(".grid-wrapper");
+    //     e.isotope({
+    //         filter: "*",
+    //         animationOptions: {
+    //             duration: 750,
+    //             easing: "linear",
+    //             queue: !1
+    //         }
+    //     }), $(".grid-controls li a").click(function () {
+    //         $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
+    //         var i = $(this).attr("data-filter");
+    //         return e.isotope({
+    //             filter: i,
+    //             animationOptions: {
+    //                 duration: 750,
+    //                 easing: "linear",
+    //                 queue: !1
+    //             }
+    //         }), !1
+    //     })
+    // });
 
     // $("#contact-form").validate({
     //     rules: {
@@ -95,10 +95,12 @@ $(document).ready(function () {
     //     }
     //  });
     $('#contact-form').click(function(){ 
-        $('#contact-subtitle').fadeOut( "fast", function() {
-            $('#contact-subtitle').html('This form does literally nothing.');
-            $('#contact-subtitle').css('color','#F00');
-            $('#contact-subtitle').fadeIn( "slow", function() {});
+        $('#contact-replacement').fadeOut( "slow", function() {
+            $('#contact-replacement').html('This form does nothing except help me practice javascript. You can get in touch by emailing me using the link on the left.');
+            $('#contact-replacement').css('color','#AAA');
+            $('#contact-replacement').css('padding-bottom','400px');
+            $('#contact-replacement').css('font-size','16pt');
+            $('#contact-replacement').fadeIn( "slow", function() {});
         });
         //alert('hello');
     });
@@ -110,27 +112,27 @@ $(document).ready(function () {
     // }), $("ul.nav-pills li a").click(function () {
     //     $("ul.nav-pills li.active").removeClass("active"), $(this).parent("li").addClass("active")
     // })
-     $(window).load(function () {
-        var e = $(".grid-wrapper");
-        e.isotope({
-            filter: "*",
-            animationOptions: {
-                duration: 750,
-                easing: "linear",
-                queue: !1
-            }
-        }), $(".grid-controls li a").click(function () {
-            $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
-            var i = $(this).attr("data-filter");
-            return e.isotope({
-                filter: i,
-                animationOptions: {
-                    duration: 750,
-                    easing: "linear",
-                    queue: !1
-                }
-            }), !1
-        })
+     // $(window).load(function () {
+     //    var e = $(".grid-wrapper");
+     //    e.isotope({
+     //        filter: "*",
+     //        animationOptions: {
+     //            duration: 750,
+     //            easing: "linear",
+     //            queue: !1
+     //        }
+     //    }), $(".grid-controls li a").click(function () {
+     //        $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
+     //        var i = $(this).attr("data-filter");
+     //        return e.isotope({
+     //            filter: i,
+     //            animationOptions: {
+     //                duration: 750,
+     //                easing: "linear",
+     //                queue: !1
+     //            }
+     //        }), !1
+     //    })
     // }), $(".navbar").sticky({
     //     topSpacing: 0
     // }), $("#main-menu").onePageNav({
