@@ -2,9 +2,10 @@ $(document).ready(function () {
     $.vegas('slideshow', {
         delay:5000,
         backgrounds:[
-          { src:'img/endmill_dof2.jpg', fade:1000 },
+          { src:'img/hex_flying.jpg', fade:1000 },
+          { src:'img/tubes.jpg', fade:1000 },
           { src:'img/gainclone_top2.jpg', fade:1000 },
-          { src:'img/quad_flying2.jpg', fade:1000 },
+          { src:'img/endmill_dof2.jpg', fade:1000 },
           { src:'img/forrest_cornering2.jpg', fade:1000 }
         ]
     })('overlay', {
@@ -48,28 +49,28 @@ $(document).ready(function () {
         });
     });
 
-    // $(window).load(function () {
-    //     var e = $(".grid-wrapper");
-    //     e.isotope({
-    //         filter: "*",
-    //         animationOptions: {
-    //             duration: 750,
-    //             easing: "linear",
-    //             queue: !1
-    //         }
-    //     }), $(".grid-controls li a").click(function () {
-    //         $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
-    //         var i = $(this).attr("data-filter");
-    //         return e.isotope({
-    //             filter: i,
-    //             animationOptions: {
-    //                 duration: 750,
-    //                 easing: "linear",
-    //                 queue: !1
-    //             }
-    //         }), !1
-    //     })
-    // });
+    $(window).load(function () {
+        var e = $(".grid-wrapper");
+        e.isotope({
+            filter: "*",
+            animationOptions: {
+                duration: 750,
+                easing: "linear",
+                queue: !1
+            }
+        }), $(".grid-controls li a").click(function () {
+            $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
+            var i = $(this).attr("data-filter");
+            return e.isotope({
+                filter: i,
+                animationOptions: {
+                    duration: 750,
+                    easing: "linear",
+                    queue: !1
+                }
+            }), !1
+        })
+    });
 
     // $("#contact-form").validate({
     //     rules: {
@@ -109,27 +110,27 @@ $(document).ready(function () {
     // }), $("ul.nav-pills li a").click(function () {
     //     $("ul.nav-pills li.active").removeClass("active"), $(this).parent("li").addClass("active")
     // })
-     // $(window).load(function () {
-        // var e = $(".grid-wrapper");
-        // e.isotope({
-        //     filter: "*",
-        //     animationOptions: {
-        //         duration: 750,
-        //         easing: "linear",
-        //         queue: !1
-        //     }
-        // }), $(".grid-controls li a").click(function () {
-        //     $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
-        //     var i = $(this).attr("data-filter");
-        //     return e.isotope({
-        //         filter: i,
-        //         animationOptions: {
-        //             duration: 750,
-        //             easing: "linear",
-        //             queue: !1
-        //         }
-        //     }), !1
-        // })
+     $(window).load(function () {
+        var e = $(".grid-wrapper");
+        e.isotope({
+            filter: "*",
+            animationOptions: {
+                duration: 750,
+                easing: "linear",
+                queue: !1
+            }
+        }), $(".grid-controls li a").click(function () {
+            $(".grid-controls .current").removeClass("current"), $(this).addClass("current");
+            var i = $(this).attr("data-filter");
+            return e.isotope({
+                filter: i,
+                animationOptions: {
+                    duration: 750,
+                    easing: "linear",
+                    queue: !1
+                }
+            }), !1
+        })
     // }), $(".navbar").sticky({
     //     topSpacing: 0
     // }), $("#main-menu").onePageNav({

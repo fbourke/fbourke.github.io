@@ -76,17 +76,17 @@
          <header class="section-header">
             <h2 class="section-title"><span>Metrics</span></h2>
               <div class="spacer"></div>
-            <p class="section-subtitle">NOTE: This website is still under construction. I just like the spinning pie charts.  </p>
+            <!-- <p class="section-subtitle">NOTE: This website is still under construction. I just like the spinning pie charts.  </p> -->
         </header>
         <div class="row">
           <div class="col-md-2 col-md-offset-1">
-            <span class="chart" data-percent="37.5" data-places="1">
+            <span class="chart" data-percent="62.5" data-places="1">
               <span class="percent"></span>
               <h3>Undergraduate Education Completed</h3>
             </span>
           </div>
           <div class="col-md-2 ">
-          <span class="chart" data-percent="0.0977" data-places="4">
+          <span class="chart" data-percent="0.0978" data-places="4">
             <span class="percent"></span>
             <h3>Probability of Death*</h3>
           </span>
@@ -125,19 +125,19 @@
                     <p class="section-subtitle">Here are a few projects I've worked on. Click any of them for more pictures and a short description.</p>
                 </header>
            
-                <div id="grid-controls-wrapper">
+                <!-- <div id="grid-controls-wrapper">
                 <ul class="nav nav-pills center-pills grid-controls">
                   <li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a></li>
                   <li class="filter" ><a href="javascript:void(0)" data-filter=".electrical">Electrical</a></li>   
                   <li class="filter" ><a href="javascript:void(0)" data-filter=".mechanical">Mechanical</a></li>            
-                  <!--<li class="filter"><a href="javascript:void(0)"  data-filter=".other">Other</a></li>-->
+                  <!--<li class="filter"><a href="javascript:void(0)"  data-filter=".other">Other</a></li>
                 </ul>
               </div>
-            
+             -->
                 <div>
                   <ul id="grid" class="grid-wrapper">
                       <li class="mix electrical mechanical" >
-                       <a data-toggle="modal" data-target="#theremin"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/theremin/theremin01s.jpg" alt="" >
+                      <a data-toggle="modal" data-target="#theremin"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/theremin/theremin01s.jpg" alt="" >
                       </a> </li>
                       <li class="mix electrical" >
                        <a data-toggle="modal" data-target="#power"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/power/power03s.jpg" alt="" >
@@ -156,6 +156,12 @@
                       </a> </li>
                       <li class="mix electrical mechanical" >
                        <a data-toggle="modal" data-target="#cannon"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/cannon/cannon01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#latch"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/latch/latch01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#up"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/up/up01s.jpg" alt="" >
                       </a> </li>
                   </ul>
                 </div>
@@ -252,11 +258,14 @@
                   <img class="img-responsive portfolio-description-imge" src="img/portfolio/quad/quad06w.jpg" alt="" />
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title" id="myModalLabel">Quadcopter</h4>
+                      <h4 class="modal-title" id="myModalLabel">Flying Machines!</h4>
                     </div>
                     <div class="modal-body">
                       <a href="img/portfolio/quad/quad03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/quad/quad03s.jpg" alt="" /></a>
-                      <p>I built a quadcopter from Parallax ELEV-8 parts. It uses four blue and green 10x4.5 propellers, which match the blue and green LED tape on the booms. The booms are aluminium and the structural components are laser-cut delrin, some of which I've modified and recut to mount to a <a href="http://www.rctimer.com/product_884.html">brushless gimbal</a>, which is great for filming just about anything from the air. My current addition to the quadcopter is a <a href="https://www.hobbyking.com/hobbyking/store/__26588__MultiWii_PRO_Flight_Controller_w_MTK_GPS_Module.html">MultiWii PRO</a>control board with a GPS, so I'm working on getting waypoints working.
+                      <p>I built a hexcopter around the RCT800 platform. It uses six 12" or 14" carbon fiber propellers and an Arduflyer 2.5 flight controller (with an external GPS). The booms are injection molded plastic and I've added carbon fiber landing gear to mount a <a href="http://www.rctimer.com/product_884.html">brushless gimbal</a>, which is great for filming from the air. 
+                      </p>
+                      <p>
+                      Here's a short video I filmed for Olin's Baja team: <a href="https://www.youtube.com/watch?v=PEYRwyplQ0o">Olin Baja December</a>
                       </p>
                     </div>
                     <div class="modal-footer">
@@ -311,6 +320,27 @@
                         <li><a href="https://atmelcorporation.wordpress.com/2014/01/15/video-this-confectionery-cannon-fires-marshmallows">Atmel Embedded Design Blog</a></li>
                         <li><a href="http://thenextweb.com/shareables/2014/01/20/four-students-built-face-tracking-marshmallow-cannon/#!wZMPg">The Next Web</a></li>
                       </ul></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="latch" tabindex="-1" role="dialog" aria-labelledby="latch" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/latch/latch04w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Vacuum Tube SR Latch</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/latch/latch03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/latch/latch03s.jpg" alt="" /></a>
+                      <p>In Computer Architecture class, I designed and built a basic element of computer logic using vacuum tubes with a partner. Our writeup of the project is on the <a href="http://wikis.olin.edu/ca/doku.php?id=2014:vacuum_tube_sr_latch">CompArch Website,</a> where we talk in extensive detail about the circuit's design and functionality, in addition to providing tips to other students looking to continue our work or work in a similar area.
+                      </p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
