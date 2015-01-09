@@ -2,8 +2,8 @@ $(document).ready(function () {
     $.vegas('slideshow', {
         delay:5000,
         backgrounds:[
-          { src:'img/hex_flying.jpg', fade:1000 },
-          { src:'img/tubes.jpg', fade:1000 },
+          { src:'img/hex_flying2.jpg', fade:1000 },
+          { src:'img/tubes2.jpg', fade:1000 },
           { src:'img/gainclone_top2.jpg', fade:1000 },
           { src:'img/endmill_dof2.jpg', fade:1000 },
           { src:'img/forrest_cornering2.jpg', fade:1000 }
