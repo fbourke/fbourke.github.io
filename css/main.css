@@ -435,6 +435,9 @@ label.valid {
 .btn-linkedin:hover {
     color: #015786;
 }
+.btn-flickr:hover {
+    color: #ff0084;
+}
 .btn-resume:hover {
     color: #161C92;
 }
