@@ -96,7 +96,7 @@ $(document).ready(function () {
     //  });
     $('#contact-form').click(function(){ 
         $('#contact-replacement').fadeOut( "slow", function() {
-            $('#contact-replacement').html('This form does nothing except help me practice javascript. You can get in touch by emailing me using the link on the left.');
+            $('#contact-replacement').html('This form does nothing except help me practice javascript. You can get in touch by emailing me using the link on the left, or by downloading my resume and using one of the contact methods at the bottom.');
             $('#contact-replacement').css('color','#AAA');
             $('#contact-replacement').css('padding-bottom','400px');
             $('#contact-replacement').css('font-size','16pt');
