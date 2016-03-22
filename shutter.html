@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <title>Forrest Bourke | Shutter Testing</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="vegas/jquery.vegas.css"> -->
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Forrest Bourke</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right" id="main-menu">
+            <li><a href="index.html#page-welcome">Home</a></li>
+            <li><a href="index.html#page-essays">Home/Essays</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- navbar ends -->
+    <!-- essays begins -->
+    <section id="page-essays" class="page-essays">
+        <header class="section-header">
+            <h2 class="section-title"><span>Shutter Testing</span></h2>
+            <div class="spacer"></div>
+            <p></p>
+            <!-- <p class="section-subtitle"> </p> -->
+        </header>
+        <div class="row essay-text">
+          <div class="col-md-12">
+            <p>Working with old cameras, I came to wonder how accurate the shutter speeds were. I built a simple circuit with a photodiode and an op-amp to optically determine the actual shutter speed, and measured it for various lens/shutter combinations.</p>
+            <p>Below is a plot of all the lenses/shutters I've tested so far. On the x-axis is the shutter speed displayed on the lens, and on the y-axis is the deviation from that shutter speed in f/stops. For example, if a lens set at 1/50 is actually firing at 1/25, the deviation will be listed as +1. </p>
+            <div class="well">
+              <!-- <img class="img-responsive" src="img/essays/optar_comparison.png" alt="" /> -->
+              <div class="infogram-embed" data-id="lens_comparison-6" data-type="interactive" data-title="Lens Comparison"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t),d=o[0],a=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=a+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var r=e.createElement(t);r.async=1,r.id=n,r.src=s,d.parentNode.insertBefore(r,d)}}(document,"script","infogram-async","//e.infogr.am/js/dist/embed-loader-min.js");</script>
+            </div>
+            <h5>Speed Graphic Lenses</h5>
+            <h6>Graphex Optar 135mm f/4.7</h6>
+            <p>When I bought my Speed Graphic, it came with three lenses: a Graphex 162mm f/4.5, and, curiously, two of the same lens: the Graphex 135mm f/4.7. Why the previous owner had two of the same lens, I have no idea, but it makes for an interesting comparison. The two lenses have serial numbers 488003 and 788961. I'm assuming the 78 lens was later than the 48 lens, but I could be wrong. Let's consider the 78 lens for a moment. In comparison to the 48 lens, the 78 lens has a better average deviation (+0.47 stops) but a worse maximum deviation (+1.29 stops at 1/400). At high speeds, it deviates significantly from the numbers on the dial. When set at 1/200, it's closer to 1/125. At 1/400, it's actually closest to 1/160. Imagine that: you think you're setting the lens at 1/400 for a full stop speed increase, but it's barely a third of a stop faster than 1/200.  </p>
+            <h6>Graphex Optar 162mm f/4.5</h6>
+            <p>These Graphex lenses are actually just rebranded versions of other lenses. Mine appear to be Wollensak lenses and shutters. My 162mm lens has a serial number of 891458 – and the best performance out of all my lenses. The y-axis on the following graph is log exposure, in stops away from 1 second. The red line is the "ideal" shutter speed: for 1/200, it should actually be closest to 1/203 seconds, which is \( 2^{\left(-7\,^2\!/_3\right)} \) seconds, or 7 and 2/3 stops below 1 second. Modern cameras are calibrated for this "correct" speed: if you set your DSLR for 30 seconds, it'll actually keep the shutter open for 32 seconds, since this is \( 2^{\left(+5\right)} \). You can read more about this on <a href="http://www.scantips.com/lights/fstop.html#thirds">ScanTips</a></p>
+            <div class="well">
+              <h4>Graphex Optar 162mm f/4.5 Serial No. 891458</h4>
+              <div class="infogram-embed" data-id="optar_162mm-25276" data-type="interactive" data-title="Optar 162mm"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t),d=o[0],a=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=a+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var r=e.createElement(t);r.async=1,r.id=n,r.src=s,d.parentNode.insertBefore(r,d)}}(document,"script","infogram-async","//e.infogr.am/js/dist/embed-loader-min.js");</script>
+            </div>
+            <h5 id="bessa">Voigtländer Bessa</h5>
+            <p>The Bessa was a folding 6x9cm medium format camera made by Voigtländer; you can read more about the Bessa on <a href="http://camerapedia.wikia.com/wiki/Bessa_(folders)">Camerapedia</a>. Mine appears to be equipped with the Voigtar lens and the Prontor shutter: the lowest possible options. This particular model has a flip-up sports finder on the top of the camera but no brilliant finder. The shutter only has 4 speeds (in addition to bulb and time): 1/25, 1/50, 1/100, and 1/125, a maximum range of 2 and 1/3 stops. The aperture on the lens ranges from f/6.3 to f/22, a range of 4 and 2/3 stops. It can be difficult to fit a given scene into this limited exposure range. Of course, being most likely around 80 years old, the low-end Prontor shutter has suffered a little. </p>
+            <style type="text/css">
+              .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;margin:0px auto;}
+              .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+              .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;border-top-width:1px;border-bottom-width:1px;}
+              .tg .tg-yw4l{vertical-align:top}
+              .tg .tg-4eph{background-color:#f9f9f9}
+              @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+              </style>
+              <p>
+                <table class="tg">
+                  <tr>
+                    <th class="tg-yw4l">Indicated Speed</th>
+                    <th class="tg-yw4l">Actual Speed</th>
+                  </tr>
+                  <tr>
+                    <td class="tg-4eph">1/25</td>
+                    <td class="tg-4eph">1/15</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">1/50</td>
+                    <td class="tg-031e">1/25</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-4eph">1/100</td>
+                    <td class="tg-4eph">1/45</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">1/125</td>
+                    <td class="tg-031e">1/60</td>
+                  </tr>
+                </table>
+              </p>
+              <p> I made this handy exposure chart and taped it to the back of the camera, so I know what the actual shutter speed is despite what's indicated on the shutter. 1/45 is a half-stop between 1/30 and 1/60. This information is the same as in the graph below, which features how many stops away from the "original" speed the Voigtländer's shutter has drifted. </p>
+            <div class="well"> <!-- voightlander chart -->
+              <h4>Voigtländer Anastigmat Voigtar 105mm f/6.3</h4>
+              <div class="infogram-embed" data-id="voightlander_anastigmat" data-type="interactive" data-title="Voightländer Anastigmat"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t),d=o[0],a=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=a+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var r=e.createElement(t);r.async=1,r.id=n,r.src=s,d.parentNode.insertBefore(r,d)}}(document,"script","infogram-async","//e.infogr.am/js/dist/embed-loader-min.js");</script>
+            </div>
+            <h5>Lens Gallery</h5>
+            <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div>
+            <div id="links">
+                <a href="img/essays/voigtar.jpg" title="Voigtländer Anastigmat Voigtar 105mm f/6.3"></a>
+                <a href="img/essays/162mm.jpg" title="Graphex Optar 162mm f/4.5"></a>
+                <a href="img/essays/135mm.jpg" title="Graphex Optar 135mm f/4.7 Serial No. 788961"></a>
+                <a href="img/essays/135mm-1.jpg" title="Graphex Optar 135mm f/4.7 Serial No. 488003"></a>
+            </div>
+          </div>
+        </div>
+    </section><!-- skills -->
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="vegas/jquery.vegas.js"></script> -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/blueimp-gallery.min.js"></script>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    <script>
+      blueimp.Gallery(
+          document.getElementById('links').getElementsByTagName('a'),
+          {
+              container: '#blueimp-gallery',
+              carousel: true
+          }
+      );
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-41729175-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
