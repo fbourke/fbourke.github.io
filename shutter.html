@@ -51,27 +51,32 @@
             <h2 class="section-title"><span>Shutter Testing</span></h2>
             <div class="spacer"></div>
             <p></p>
-            <!-- <p class="section-subtitle"> </p> -->
+            <p class="section-subtitle">Latest Update: 3/22/16</p>
         </header>
         <div class="row essay-text">
           <div class="col-md-12">
             <p>Working with old cameras, I came to wonder how accurate the shutter speeds were. I built a simple circuit with a photodiode and an op-amp to optically determine the actual shutter speed, and measured it for various lens/shutter combinations.</p>
-            <p>Below is a plot of all the lenses/shutters I've tested so far. On the x-axis is the shutter speed displayed on the lens, and on the y-axis is the deviation from that shutter speed in f/stops. For example, if a lens set at 1/50 is actually firing at 1/25, the deviation will be listed as +1. </p>
+            <p>Below is a plot of all the lenses/shutters I've tested so far. For each speed, I test it three times and use the average. On the x-axis is the shutter speed displayed on the lens, and on the y-axis is the deviation from that shutter speed in f/stops. For example, if a lens set at 1/50 is actually firing at 1/25, the deviation will be listed as +1. </p>
             <div class="well">
               <!-- <img class="img-responsive" src="img/essays/optar_comparison.png" alt="" /> -->
               <div class="infogram-embed" data-id="lens_comparison-6" data-type="interactive" data-title="Lens Comparison"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t),d=o[0],a=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=a+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var r=e.createElement(t);r.async=1,r.id=n,r.src=s,d.parentNode.insertBefore(r,d)}}(document,"script","infogram-async","//e.infogr.am/js/dist/embed-loader-min.js");</script>
             </div>
-            <h5>Speed Graphic Lenses</h5>
+            <h5>Speed Graphic</h5>
             <h6>Graphex Optar 135mm f/4.7</h6>
             <p>When I bought my Speed Graphic, it came with three lenses: a Graphex 162mm f/4.5, and, curiously, two of the same lens: the Graphex 135mm f/4.7. Why the previous owner had two of the same lens, I have no idea, but it makes for an interesting comparison. The two lenses have serial numbers 488003 and 788961. I'm assuming the 78 lens was later than the 48 lens, but I could be wrong. Let's consider the 78 lens for a moment. In comparison to the 48 lens, the 78 lens has a better average deviation (+0.47 stops) but a worse maximum deviation (+1.29 stops at 1/400). At high speeds, it deviates significantly from the numbers on the dial. When set at 1/200, it's closer to 1/125. At 1/400, it's actually closest to 1/160. Imagine that: you think you're setting the lens at 1/400 for a full stop speed increase, but it's barely a third of a stop faster than 1/200.  </p>
             <h6>Graphex Optar 162mm f/4.5</h6>
-            <p>These Graphex lenses are actually just rebranded versions of other lenses. Mine appear to be Wollensak lenses and shutters. My 162mm lens has a serial number of 891458 – and the best performance out of all my lenses. The y-axis on the following graph is log exposure, in stops away from 1 second. The red line is the "ideal" shutter speed: for 1/200, it should actually be closest to 1/203 seconds, which is \( 2^{\left(-7\,^2\!/_3\right)} \) seconds, or 7 and 2/3 stops below 1 second. Modern cameras are calibrated for this "correct" speed: if you set your DSLR for 30 seconds, it'll actually keep the shutter open for 32 seconds, since this is \( 2^{\left(+5\right)} \). You can read more about this on <a href="http://www.scantips.com/lights/fstop.html#thirds">ScanTips</a></p>
+            <p>These Graphex lenses are actually just rebranded versions of other lenses. Mine appear to be Wollensak lenses and shutters. My 162mm lens has a serial number of 891458 – and the best performance out of all my lenses. The y-axis on the following graph is log exposure, in stops away from 1 second. The red line is the "ideal" shutter speed: for 1/200, it should actually be closest to 1/203 seconds, which is \( 2^{\left(-7\,^2\!/_3\right)} \) seconds, or 7 and 2/3 stops below 1 second. Modern cameras are calibrated for this "correct" speed: if you set your DSLR for 30 seconds, it'll actually keep the shutter open for 32 seconds, since this is \( 2^{\left(+5\right)} \). You can read more about this on <a href="http://www.scantips.com/lights/fstop.html#thirds">ScanTips</a>.</p>
             <div class="well">
               <h4>Graphex Optar 162mm f/4.5 Serial No. 891458</h4>
               <div class="infogram-embed" data-id="optar_162mm-25276" data-type="interactive" data-title="Optar 162mm"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t),d=o[0],a=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=a+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var r=e.createElement(t);r.async=1,r.id=n,r.src=s,d.parentNode.insertBefore(r,d)}}(document,"script","infogram-async","//e.infogr.am/js/dist/embed-loader-min.js");</script>
             </div>
+            <h6>Speed Graphic FP Shutter</h6>
+            <p>The "Speed" in the Speed Graphic name comes from the fact that the built-in focal plane shutter extends to 1/1000. To test the Speed Graphic, I took the lens off, put the photo-detector inside the body of the camera, and placed a flashlight on the ground glass. As it turns out, this shutter was one of the most accurate that I tested. Even at the highest speed, it's only 1/3 of a stop off: the 1/1000 setting is actually about 1/800. The average deviation was only +0.18 stops—not bad for a camera first introduced in 1912. To set the focal plane shutter, you set the tension to a number 1-6, and then you crank the curtain to one of the slits A-D, with A being the largest and D being the narrowest. The curtain display has additional settings: T, for closed, and O, for open. You fire the shutter with a little lever below the curtain crank. As a result of this spring-and-curtain system, the focal plane shutter has all sorts of funky speeds that don't line up well with 1/2 or 1/3 stops, and I didn't test all of the speeds, but the ones I did test are shown below.</p>
+            <div class="well">
+              <div class="infogram-embed" data-id="speed_graphic_fp_shutter" data-type="interactive" data-title="Speed Graphic FP Shutter"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t),d=o[0],a=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=a+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var r=e.createElement(t);r.async=1,r.id=n,r.src=s,d.parentNode.insertBefore(r,d)}}(document,"script","infogram-async","//e.infogr.am/js/dist/embed-loader-min.js");</script>
+            </div>
             <h5 id="bessa">Voigtländer Bessa</h5>
-            <p>The Bessa was a folding 6x9cm medium format camera made by Voigtländer; you can read more about the Bessa on <a href="http://camerapedia.wikia.com/wiki/Bessa_(folders)">Camerapedia</a>. Mine appears to be equipped with the Voigtar lens and the Prontor shutter: the lowest possible options. This particular model has a flip-up sports finder on the top of the camera but no brilliant finder. The shutter only has 4 speeds (in addition to bulb and time): 1/25, 1/50, 1/100, and 1/125, a maximum range of 2 and 1/3 stops. The aperture on the lens ranges from f/6.3 to f/22, a range of 4 and 2/3 stops. It can be difficult to fit a given scene into this limited exposure range. Of course, being most likely around 80 years old, the low-end Prontor shutter has suffered a little. </p>
+            <p>The Bessa was a folding 6x9cm medium format camera made by Voigtländer; you can read more about the Bessa on <a href="http://camerapedia.wikia.com/wiki/Bessa_(folders)">Camerapedia</a>. Mine appears to be equipped with the Voigtar lens and the Prontor shutter: the lowest possible options. This particular model has a flip-up sports finder on the top of the camera. Better models featured a brilliant finder or even a rangefinder. The shutter only has 4 speeds (in addition to bulb and time): 1/25, 1/50, 1/100, and 1/125, a maximum range of 2 and 1/3 stops. The aperture on the lens ranges from f/6.3 to f/22, a range of 4 and 2/3 stops. It can be difficult to fit a given scene into this limited exposure range. Of course, being most likely around 80 years old, the low-end Prontor shutter has suffered a little. </p>
             <style type="text/css">
               .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;margin:0px auto;}
               .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
@@ -119,11 +124,13 @@
                 <a class="play-pause"></a>
                 <ol class="indicator"></ol>
             </div>
+            <!-- images for slideshow -->
             <div id="links">
-                <a href="img/essays/voigtar.jpg" title="Voigtländer Anastigmat Voigtar 105mm f/6.3"></a>
-                <a href="img/essays/162mm.jpg" title="Graphex Optar 162mm f/4.5"></a>
-                <a href="img/essays/135mm.jpg" title="Graphex Optar 135mm f/4.7 Serial No. 788961"></a>
-                <a href="img/essays/135mm-1.jpg" title="Graphex Optar 135mm f/4.7 Serial No. 488003"></a>
+              <a href="img/essays/setup.jpg" title="Testing the Speed Graphic"></a>
+              <a href="img/essays/voigtar.jpg" title="Voigtländer Anastigmat Voigtar 105mm f/6.3"></a>
+              <a href="img/essays/162mm.jpg" title="Graphex Optar 162mm f/4.5"></a>
+              <a href="img/essays/135mm.jpg" title="Graphex Optar 135mm f/4.7 Serial No. 788961"></a>
+              <a href="img/essays/135mm-1.jpg" title="Graphex Optar 135mm f/4.7 Serial No. 488003"></a>
             </div>
           </div>
         </div>
