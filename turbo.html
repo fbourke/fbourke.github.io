@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <title>Forrest Bourke | Installing a Junkyard Turbo in my 1984 Volvo 245</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="vegas/jquery.vegas.css"> -->
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Forrest Bourke</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right" id="main-menu">
+            <li><a href="index.html#page-welcome">Home</a></li>
+            <li><a href="index.html#page-essays">Home/Essays</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- navbar ends -->
+    <!-- essays begins -->
+    <section id="page-essays" class="page-essays">
+        <header class="section-header">
+            <h2 class="section-title"><span>Shutter Testing</span></h2>
+            <div class="spacer"></div>
+            <p></p>
+            <p class="section-subtitle">Latest Update: 7/1/20</p>
+        </header>
+        <div class="row essay-text">
+          <div class="col-md-12">
+            <h1>Intro</h1>
+            <p>This page is for a few purposes: a how-to for anyone else who wants to copy what I've done, a build log to tell other people what I've done, and a page listing my mistakes so others can avoid them. I'll include what I've spent on parts as well—a reverse budget, if you will.</p>
+            <div class="well">
+              <h6>Note:</h6>
+              <p>Amazon links are <a href="https://en.wikipedia.org/wiki/Affiliate_marketing">affiliate links</a>, other sites are not. I've only linked things I've actually bought and used myself. All of the Amazon links are <em>also</em> to Amazon Smile, which donates 0.5% of the purchase price to the charity of your choice. If you haven't signed up, it'll ask you to pick a charity before redirecting you to the product. Neither of these features change the price you pay.</p>
+            </div>
+            <p>We started the turbo build at 300,500 miles on the car. As far as I know, this is the original engine, a 1984 <a href="https://en.wikipedia.org/wiki/Volvo_Redblock_Engine">B23F (Wikipedia Link)</a>. Since the car came with Volvo's M46 manual transmission, the compression should be 9.5:1 and the stock numbers would've been 113hp at 5400 RPM and 136 ft-lbs at 2750 RPM. As far as I know, 1983 and 1984 were the only two years Volvo used Bosch LH2.0 fuel injection, switching to LH2.2 and then LH2.4 in the latter years of the 240. 1984 was also the last year before Volvo switched to the B230, featuring slightly different internals (I'm far from an expert, just summarizing info from <a href="https://www.volvoclub.org.uk/history/engines/volvo_engines.shtml">around the web</a>. I bought the car in 2018 with 282,000 miles, and the 18k we've put on it since have certainly not been easy miles. Prior to the turbo, it wasn't fast enough to get out of its own way. It wasn't powerful out of the factory, and the 300k miles after that certainly didn't increase the power. What sealed the deal on adding the turbo was struggling to get up hills off-road in Baja — we had the clearance, we just didn't have the power to make it up the steeper hills (NB, we could've also fixed this with lower rear end gearing, a lower first gear in the transmission, or an add-on transfer case, but a turbo seemed like the easiest, cheapest, and most well-traveled path). </p>
+            <p>The turbo journey started on July 4th, 2019. Friend and excellent mechanic Hans accompanied me to the Tumwater junkyard to pull a turbo from a Volvo 740 turbo. Pick-n-Pull is spotty about labeling turbo models, so I make sure to check the VIN before driving out to the junkyard. This was actually my second try at finding a junkyard turbo. Some Thursday in March, I called another Pick-n-Pull about a turbo Volvo and confirmed hadn't been crushed — by the time I got there on Saturday, the top had been crushed/cut off and the car was used as a bin for other trash. </p>
+            <p>In addition to talking to friends and the Turbobricks facebook group, this <a href="http://forums.turbobricks.com/showpost.php?p=4480717&postcount=37">turbobricks post</a> by 740atl was <em> incredibly helpful</em>. I'd advise reading that post all the way through several times before embarking on this journey. If for whatever reason that thread is down, here is a <a href="img/essays/turbo/Turbobricks_plusT_thread.pdf">PDF Link</a>.</p>
+            <div class="well">
+              <h4>Disappointment</h4>
+              <img class="img-responsive" src="img/essays/turbo/IMG_0663.jpg" alt="A crushed white car filled with trash in a junkyard" /> </br>
+              The only potentially useful part was an intercooler pipe. I left it behind. The employee in the picture above yelled at me for climbing on the car looking for parts.
+              <img class="img-responsive" src="img/essays/turbo/IMG_0065.jpg" alt="Hand holding black rubber piping in front of a car's engine bay" />
+            </div>
+            <p>The second Pick-n-Pull trip was much more successful. I nervously opened the hood to find an untouched 740 turbo engine, success at last! </p>
+            <div class="well">
+              <h4>Success!</h4>
+              <img class="img-responsive" src="img/essays/turbo/IMG_8574.jpg" alt="Turbocharger installed in an engine bay" />
+            </div>
+            <p>Hans and I proceeded to pull the following from the donor 740:</p>
+            <ul>
+              <li>Turbo, including the attached exhaust manifold, downpipe, oil hard lines, coolant hard lines</li>
+              <li>Intercooler and associated hard & soft piping</li>
+              <li>Oil cooler and input fittings, cutting the hoses (this was a mistake)</li>
+              <li>Fuel rail and fuel injectors (we ended up not needing the latter)</li>
+              <li>LH2.4 Fuel Computer and EZK Ignition Computer (we used neither)</li>
+            </ul>
+            <p>We didn't pull the oil cooling adapter/oil filter relocation because I didn't know how easy it was to remove from the car. This was again, a mistake. </p>
+            <p>The total cost for the parts from Pick-n-Pull was $250 including core charges (none of which I got back), because we went on the 4th of July, which was a half-off day. A "normal" day, the parts would've been $500. In my opinion, that's a bit steep for junkyard turbo parts off of a 233k mile car - we could've gotten the price down a bit by being smarter with the things we got, but going on a 50% off day was key.</p>
+            <div class="well">
+              <h4>Oil cooler adapter</h4>
+              <p>We left this behind from the donor car, but that was a mistake.</p>
+              <img class="img-responsive" src="img/essays/turbo/IMG_2675.jpg" alt="Water cooling adapter covered with grime attached to a red engine block" />
+            </div>
+            <div class="well">
+              <h4>Remember not to start the car without oil</h4>
+              <img class="img-responsive" src="img/essays/turbo/IMG_7773.jpg" alt="A paper towel draped over a car's instrument cluster with NO OIL written in black pen" />
+            </div>
+            <h1>Mechanical Bits</h1>
+            <h2>Oil Drain</h2>
+            <p>For the oil drain, I bought a kit on eBay called <a href="https://www.ebay.com/itm/MAMBA-Turbo-Oil-Feed-Return-Drain-Line-Kit-For-VOLVO-740-940-TD04H-13C-49189/264031261054?hash=item3d797d517e:g:7iwAAOSwztVb5VFL">MAMBA Turbo Oil Feed & Return Drain Line Kit For VOLVO 740 940 TD04H-13C 49189</a> for $75. It came via incredibly fast DHL shipping from Taiwan — I've had parts take longer to come from California. As it turns out, this kit was a poor choice for my application. I wasn't able to use the drain line at all because it was intended for a stock turbo block with the drain press fit using an o-ring seal (I gave the drain line away). My 1984 B23F block didn't have the oil drain hole <b>or</b> the casting to drill a hole, and even if it did have the casting, I wasn't interested in drilling the block — attempting to clean the chips out of the crankcase seemed like a recipe for disaster. I <em>was</em> able to use the 10-AN flange from the kit that goes on the turbo as well as the banjo bolt and 4-AN feed line (described in the next section).</p>
+            <p>I got a 10-AN bulkhead fitting <a href="https://smile.amazon.com/Bulkhead-Fitting-Adapter-Aluminum-Locking/dp/B07X993DVZ/ref=as_li_ss_tl?dchild=1&keywords=B07X993DVZ&qid=1594091649&s=automotive&sr=1-1&linkCode=ll1&tag=forrest03-20&linkId=ac4e79a9a3f6ca4ec5528744a8c4a336&language=en_US">from Amazon</a> and used a step drill to make a hole in the oil pan below the baffles. As it turned out, I chose a bad place to make the hole. </p>
+            <div class="col-md-6">
+              <div class="well">
+                <h4>Drilling the oil pan with a step drill</h4>
+                <img class="img-responsive" src="img/essays/turbo/IMG_2319.jpg" alt="Man using a cordless drill with a brass step bit to drill into a metal oil pan" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="well">
+                <h4>Bulkhead fitting installed with a right angle fitting</h4>
+                <img class="img-responsive" src="img/essays/turbo/IMG_6096.jpg" alt="Red oil pan with AN right angle fitting installed in the side" />
+              </div>
+            </div>
+            <p>The fitting interfered with the cover that installs between the engine and the transmission. I'm not sure if this is M46-only, and it looks like we might have been able to leave the cover off, but I chose to cut a notch to avoid the fitting. If you're smarter than me, you'll drill the hole a few inches forward so that it doesn't interfere with the transmission cover.</p>
+            <p>Getting the oil pan off was a real pain. We ended up disconnecting the subframe via the two bolts on either side (using long extensions for the ones under the brake master cylinder) and then jacking the engine up on the crank pulley and putting blocks between the cross-member and the frame. It was a little sketchy, but we got the pan out eventually. We broke off about 2 inches of the rubber hose next to the oil pickup, I didn't bother replacing it but I think it can be replaced from above when replacing the flame trap.  </p>
+            <div class="col-md-6">
+              <div class="well">
+                <h4>Don't put the fitting here</h4>
+                <img class="img-responsive" src="img/essays/turbo/IMG_4389.jpg" alt="Fitting installed in the red oil pan with a roughly cut aliuminum sheet in the foreground" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="well">
+                <h4>Hi Doug!</h4>
+                <img class="img-responsive" src="img/essays/turbo/IMG_4591.jpg" alt="Engine pulley held up by floor jack and 3 unstable looking 4x4 blocks of plywood" />
+              </div>
+            </div>
+            <p>I used "Evil Energy" brand nylon 10-AN hose and fittings, from <a href="https://smile.amazon.com/EVIL-ENERGY-Fitting-Braided-Universal/dp/B081W7WQ82/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=&linkId=55bf9a1f4ebaa536b4b863b379782604&language=en_US">Amazon</a>. I was dumb and bought a <a href="https://smile.amazon.com/gp/product/B01N00GRY1/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=forrest03-20&linkId=cd89fdf693b0a1edc7c1b6d31c84bec3&language=en_US">10ft kit</a> and then a 16ft kit, because I ran out of fittings. NB, these were all 10AN kits with black and red fittings when I bought them, but it looks like some of them have changed to black/black fittings, and not all of them have 10AN in stock. Don't follow the links blindly since Amazon 3rd party sellers and Amazon itself changes inventory all the time; make sure you're getting the right hose.</p>
+            <div class="col-md-12">
+              <div class="well">
+                <h4>Bulkhead fitting installed with a right angle fitting</h4>
+                <img class="img-responsive" src="img/essays/turbo/IMG_7496.jpg" alt="Black braided hose with red fittings going from a turbo to an oil pan" />
+              </div>
+            </div>
+            <h2>Oil Feed</h2>
+            <p>For the oil feed, I used the banjo bolt and hose from the eBay MAMBA kit on the turbo side. On the feed side, I used a <a href="https://smile.amazon.com/RUSSELL-RUS-660420-Russell-ADAPTER-FITTING/dp/B000CPASFA/ref=as_li_ss_tl?dchild=1&keywords=4an+to+1/8+npt&qid=1594095185&sr=8-3&linkCode=ll1&tag=forrest03-20&linkId=3c5ce30f88a39a06d1d026b897cecda8&language=en_US">4AN to 1/8 NPT fitting</a> to adapt to the feed line and then a <a href="https://smile.amazon.com/gp/product/B07SC7PCX5/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=forrest03-20&linkId=1b138150250264860305f3456b8f1fd7&language=en_US">1/8 NPT brass tee</a> to keep the stock oil pressure sensor. Clocking this fitting was important to not hit the oil filter sandwich plate or the alternator. I had to screw the tee into the block and then the oil pressure sender into the tee — when I first installed it, I didn't tighten it enough and the assembly spewed a puddle of oil under the car. I also learned how to install pipe tape correctly — all the NPT fittings need pipe tape, but the AN fittings seal with the flare and don't need tape. B23 blocks like mine have a 1/8 NPT oil pressure sensor feed, but B230 and other blocks might have different fitting sizes.</p>
+            <h2>Oil Cooler</h2>
+            <p>I would not advise anyone do the oil cooler the same way I did. At the junkyard, I cut the rubber hoses above the fittings on the oil cooler side from the donor car. The stock 740 turbo setup has an oil filter adapter that moves the oil filter back and hard lines that run forwards towards the oil cooler and midway become rubber hoses into right angle fittings in the oil cooler. The best solution would be to <b>either</b> remove the oil filter adapter, hard lines/flex hose assemblies, and oil cooler from the donor car as an entire system <b>or</b> use an aftermarket sandwich plate plus an aftermarket oil cooler.</p>
+            <p>I didn't do either of these: I used an aftermarket sandwich plate ($15 on <a href="https://www.ebay.com/itm/Gold-Oil-Filter-Temp-Pressure-Oil-Cooler-Sandwich-Plate-M20X1-5-Adapter-Sensor/132337648624?hash=item1ecff043f0:g:7KgAAOSwBUVZxTUV">eBay</a>, they come in several colors), the 10AN hoses I mentioned above, and the stock oil cooler. The stock oil cooler uses <em>arcane</em> fittings called 1/2" BSP. I was unable to find 1/2" BSP to 10AN adapters, so I had to get <a href="https://smile.amazon.com/gp/product/B07QXSTFQY/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=forrest03-20&linkId=a073072b6702c6fc298cb2edfbf71eee&language=en_US">1/2" BSP to 1/2" NPT</a> and then <a href="https://smile.amazon.com/gp/product/B07ZCVDZJS/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=forrest03-20&linkId=8f7a6da3d726fa7c61fe39fb508a86c4&language=en_US">1/2" NPT to 10AN</a>.</p>
+            <div class="col-md-12">
+              <div class="well">
+                <h4>I really wouldn't recommend doing this</h4>
+                <p>Also this picture is wrong because the NPT to NPT connection in the middle needs pipe tape.</p>
+                <img class="img-responsive" src="img/essays/turbo/IMG_2389.jpg" alt="Multiple threaded fittings stacked on top of each other" />
+              </div>
+            </div>
+            <p>This whole stack is really dumb, and I wouldn't recommend doing this at all. The stack of <em>fittings alone</em> cost $35 total, which almost is enough to get an aftermarket <a href="https://www.amazon.com/s/ref=as_li_ss_tl?k=10an+oil+cooler&ref=nb_sb_noss_2&linkCode=ll2&tag=forrest03-20&linkId=3b59b7826ee2d4d40c9e350179fa8f46&language=en_US">10AN Oil Cooler</a>. There are kits that have the hoses, fittings, sandwich plate, and oil cooler all together. </p>
+            <p>To mount the oil cooler, I took off all the stock mounting brackets and just bolted it a few inches behind the grill. I can't comment on cooling performance because I haven't had the car in any temperature stressing situations and I haven't installed an oil temperature gauge. I'll install an <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=oil+temp+gauge&_sacat=0">eBay</a> one soon using the two ports in the oil filter sandwich plate (I suppose that's one advantage of using an aftermarket sandwich plate instead of the stock filter relocation adapter). One other potential advantage is being able to use the ports on the sandwich plate for the feed line into the turbo, but I found the routing was easier from the oil pressure sensor port.</p>
+            <div class="col-md-12">
+              <div class="well">
+                <h4>Guess it just drills in there</h4>
+                <img class="img-responsive" src="img/essays/turbo/IMG_8665.jpg" alt="Oil cooler mounted behind a Hella brand headlamp" />
+              </div>
+            </div>
+            <h2>Coolant Feed</h2>
+              <p>The coolant for the turbo feeds in from the lower radiator hose to the bottom of the turbo and out the top of the turbo to the hose that goes to the bottom of the coolant overflow tank. This is to promote the thermal siphon effect: you can read more at <a href="https://www.garrettmotion.com/racing-and-performance/choosing-a-turbocharger/water-cooling-for-your-turbo/">Garrett's website</a>.</p>
+              <p>Luckily, Volvo 740 hoses work pretty well. The <a href="https://smile.amazon.com/gp/product/B0066SOCZO/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=forrest03-20&linkId=841e57ecc6ddee10b94258d39237cf1c&language=en_US">lower hose</a> was about $19 and the <a href="https://smile.amazon.com/gp/product/B0066S04TC/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=forrest03-20&linkId=40319ee4d6828db5b6f31a2b40d45922&language=en_US">upper hose</a> was about $15. I grabbed these hoses from the donor car, but I figured using new rubber is probably best since these hoses tend to crack eventually. </p>
+              <p>Installing the hoses was a little tricky, I had to cut a few inches off the lower hose as well as the upper hose, and it's not totally obvious which direction the lower hose goes. In the photo, the hose is backwards and the feed to the turbo is kinked. It's not obvious (or at least it wasn't to me), but the feed to the turbo points down before curving around and going to the hardline coming out of the turbo. I had to cut an inch or two off the end of the small feed line as well to get everything to mate up.</p>
+              <p>The upper feed line was fairly easy to attach, but I switched from the rectangular 240-style coolant overflow reservoir to the <a href="https://smile.amazon.com/select-models-Coolant-Reservoir-MTC/dp/B00QHLQRIK/ref=as_li_ss_tl?dchild=1&keywords=volvo+740+coolant+bottle&qid=1594144865&sr=8-29&linkCode=ll1&tag=forrest03-20&linkId=f75bb4a303aa01aafda2f3297e816265&language=en_US">round 740-style coolant reservoir</a>. I'd imagine it's possible to keep the original 240 tank, but it'll have less clearance for the MAF/air filter. I removed the windshield wiper fluid tank as well as it took up a ton of space where the air filter now sits. Eventually, I'll return my attention to the washer fluid and fit a smaller bottle, but it's not at the top of the priority list currently.</p>
+              <div class="well">
+                <h4>This is bad, don't do this</h4>
+                <img class="img-responsive" src="img/essays/turbo/IMG_3056.jpg" alt="Engine bay showing lower radiator hose with a tee fitting" />
+              </div>
+            <h2>Fuel Rail & Injectors</h2>
+            <p>Turbo cars and all LH2.4 cars use a 3bar (43 PSI) fuel pressure regulator. I believe LH2.2 and LH2.0 N/A cars used a 2.5bar regulator, as well as a different fuel rail for LH2.0. I took the entire fuel rail from the donor car and replaced my original rail. It bolted right on to the manifold and the fitting for the fuel input from the filter fit. The only issue was I had to fashion a cap for the rail output to the cold start injector, as my manifold doesn't have one. I replaced the fuel pressure regulator with a <a href="https://www.ebay.com/itm/223307821642">3.0 bar regulator from eBay</a> — <b> do not buy the one at this link</b>. Mine failed after less than a month, fuel was coming out of the vacuum port. </p>
+            <p>For fuel injectors, I ordered a <a href="https://www.ebay.com/itm/323984514481">set of five from eBay</a>, intended for an 850 turbo. These are high impedance injectors so I didn't need to wire a resistor pack, I just connected them directly to the harness. One of the green injectors from the donor car had melted in the tip (maybe a bad sign? or maybe that's why the car was in the junkyard in the first place?) so even if I had wanted to use those low impedance green injectors, I would've needed to get a new set as well as the resistor pack. I kept all the green injectors from the junkyard car, I should have tossed them back in the car and taken just the rail.</p>
+            <p>I struggled for several weeks trying to figure out why my car would sometimes not start, why sometimes it would stumble, and occasionally make "pops" going lean when held at 2000-3000 RPM. It turned out that the threads on the intake manifold that hold the fuel rail <em>and the injector grounds</em> were stripped, causing the ground to make intermittent connection. This was a really frustrating problem to troubleshoot, since it was so intermittent and felt like ECU or MAF issues.</p>
+<!--             <div class="col-md-6"> -->
+              <div class="well">
+                <h4>Cold start injector cap</h4>
+                <p>I don't know the size of this fitting, but if I did it would be nice to put a fuel pressure sensor here.</p> 
+                <img class="img-responsive" src="img/essays/turbo/IMG_3947.jpg" alt="Metal fitting with black plastic hose folded back and secured with a ziptie" />
+              </div>
+<!--             </div> -->
+            <h2>Intercooler, Radiator, and Electric Fan</h2>
+            <p>I used the junkyard intercooler and a new Nissens radiator from FCP Euro that had a built-in fan switch. Unfortunately, the fan switch is set at a higher temperature than the thermostat, so it pulses the fan on and off as the car overheats. I wired the fan switch in parallel with a switch in the dash so the driver can force the fan on regardless of the temperature switch in the radiator. With the switch on the car seems to stay cool idling, but we haven't had it in hot weather. </p>
+            <p>I'm not 100% sure what the model of e-fan on the car is (I got it from a friend) but based on the size and the looks I think it's the 16-inch fan mentioned on Dave Barton's <a href="https://www.240turbo.com/ElectricCoolingFans.html">Electric Fan Page</a>. I 3D printed little spacers to mount the fan on the radiator and drilled holes to match the radiator tabs. Unfortunately, I didn't pick up the turbo intercooler/radiator mounts from the junkyard car, so I put the stock rubber radiator mounts on the intercooler and bailing wired the radiator to the intercooler on the bottom, and "fabricated" steel mounts for the top that bolt into the original locations.</p>
+            <p>After removing the mechanical fan and clutch, I replaced the studs in the water pump pulley with M6 bolts and washers to add a little clearance and remove the hand-shredding capability of the exposed pulley studs.</p>
+            <h2>ECU and Wiring Harness</h2> 
+            <p>The ECU and harness caused a lot of problems. When I embarked on the project, I mistakenly thought that the car was LH2.2 and that a simple swap of the ECU, MAF, and injectors to LH2.2 turbo parts would work. This was wrong — my car was originally LH2.0, which has the same <em>connectors</em> for the MAF and computer as LH2.2, but not the same <em>pinout</em>. We plugged in the new MAF and computer and immediately fried the computer — in fact, we did it twice and fried two computers. </p>
+            <p>I'm lucky to have friends that swapped the LH2.2 harness with my stock LH2.0 harness while I was gone. After the swap, we were finally able to get the car running. </p>
+            <h2>Ignition</h2>
+            <p>My car came from the factory with the Chrysler ignition system, using the computer with the vacuum line that sits on the washer fluid bottle. I swapped to a Bosch Breakerless ignition from an 80s 240 Turbo by replacing the distributor, coil, and computer. Another I pulled the EZK computer from the donor car, but not the rest of the harness and system that I'd need to swap it in. The breakerless system was fairly easy to install, though I put it where the stock coil was (on the strut next to the battery) instead of where the harnessing emerged at the rear passenger side of the engine bay. The tach didn't work for a while because I hadn't realized that the signal wire emerged in this location.</p>
+            <h2>MAF</h2>
+            <p>I used a junkyard LH2.2 MAF (part number ends in -007). I initially tried several MAFs, only the LH2.2 MAF works. Though LH2.0, 2.2, and 2.4 have the same physical connector, they're not pin compatible and only work with their respective injection systems. The LH2.0 MAF has a metal body and case, the LH2.2 and 2.4 MAFs have plastic cases, but the LH2.2 has an adjustment/calibration screw. </p>
+            <h2>PCV System</h2>
+            <p>It took me a little while to figure out the PCV system. It's fairly easy though—I used a rubber hose from the top of the oil separator box (hidden under the intake manifold) to the turbo inlet pipe. There's an orifice with a connector on it that accepts the hose. I'm told that the connector is for heating or atomizing the oil coming through the pipe, but I've yet to try connecting it.</p>
+            <p>I first tried cleaning out my stock oil separator box</p>
+            <h2>Wideband O2 Sensor</h2>
+            <p>Even though I don't have huge tuning goals for this car, a wideband O2 sensor seemed like a good safety precaution and debugging tool. I bought an <a href="https://smile.amazon.com/AEM-30-4110-UEGO-Ratio-Gauge/dp/B00N3VGPYS/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=forrest03-20&linkId=ecb606ee6927875be1f7111ddcb9f24d&language=en_US">AEM wideband</a> that came with a Bosch sensor and a weld-on bung. Since the 740 down-pipe had to be cut and welded shorter to clear the firewall, we used this opportunity to add the wideband bung. We positioned the wideband sensor about 12 inches down the pipe from the turbo—the narrowband sensor remained in the stock location, much closer to the turbo outlet. </p>
+            <h2>Exhaust</h2>
+            <p>The exhaust was pieced together from several junkyard exhausts. THe stock 740 downpipe has a diameter of 2.25". We cut and shortened the flat section of the downpipe right after the turbo flange but about 1" so it would clear the firewall. For several months, I drove the car with no exhaust, just an open downpipe under the passenger floor.</p>
+            <p>The open downpipe is fun for a week or two, but after a while wearing earplugs on the freeway gets annoying. I was lucky to find an over-axle 240 exhaust at Pick-N-Pull. I'm not sure if this was ever a stock option or if I was just lucky enough to find someone's custom exhaust. I decided to add a flex section after the downpipe because it seemed like a good idea—unfortunately, I misremembered the size of the flex and got 2.5" instead of 2.25". I used a coupler to step up from the downpipe to the flex, and then another coupler to step down from the 2.5" flex section to the 1.875" stock exhaust. I used just the center muffler, since the turbo muffles some and I don't want the totally silent stock sound. Just the center muffler has a fairly conservative sound, I'd imagine running a straight pipe to the back of the car would have a more aggressive but not overly loud sound. I did notice a little less responsiveness with the exhaust completed compared to the open downpipe—at some point I might install either an electric or a manual cutout before the muffler. The open downpipe is perfect for rallycross.</p>
+            <!--             <div class="col-md-6"> -->
+              <div class="well">
+                <h4>Exhaust in the welding process</h4>
+                <img class="img-responsive" src="img/essays/turbo/IMG_3420.jpg" alt="Metal exhaust tubing with a single muffler on a concrete floor with a wire fan and a welding electrode clamped to the tubing" />
+              </div>
+<!--             </div> -->
+            <p>Though it's been fixed now, we did have one serious problem (on the 2020 WA Gambler 500). The exhaust fell apart at the over-axle connection, meaning the hot exhaust pointed directly at the fuel tank. While we don't have absolute proof this was the problem, the car would repeatedly quit running after a few minutes, especially while driving slowly. It seems likely that the exhaust and the hot weather contributed to vapor locking the motor. We cut the exhaust off during that event to get home and then welded it back on more securely after getting home. </p>
+            <h2>Vacuum Connections</h2>
+            <p>I wanted to make a log of all the vacuum connections, because it took me a little bit to figure out where to put them. There are connections before and after the throttle body, which see vacuum at different times, and the distinction is important for some of the connections. For example, if the turbo CBV is connected to the side before the throttle body, it won't function at all, since it won't see the vacuum in the manifold when the throttle is shut. </p>
+            <p>Fun fact, while writing this section, I thought about how the vacuum advance is supposed to work and moved the vacuum advance from before the throttle body to after, using a tee from the fuel pressure regulator line. The car appears to idle a little better now. My exact setup is a little difficult because it never existed from the factory. Early 80s turbo 240s used the breakerless ignition but not LH2.2, and LH2.2 cars from the late 80s used EZK ignition. </p>
+            <!--             <div class="col-md-6"> -->
+              <div class="well">
+                <h4>Vacuum Connections</h4>
+                <img class="img-responsive" src="img/essays/turbo/IMG_4421_text.jpg" alt="A mess of hoses and tubing inside a car engine bay" />
+              </div>
+<!--             </div> -->
+            <h4>Before the Throttle Body</h4>
+            <ul>
+              <li>Charcoal Canister (two hoses)</li>
+            </ul>
+            <h4>After the Throttle Body</h4>
+            <ul>
+              <li>Vacuum/Boost Gauge</li>
+              <li>Vacuum advance distributor</li>
+              <li>Cabin HVAC Vacuum Line</li>
+              <li>Turbo CBV/Blow-off Valve</li>
+              <li>Fuel Pressure Regulator</li>
+              <li>Brake Booster</li>
+            </ul>
+            <h1>Reverse "Budget"</h1>
+            <p>Here's a rough accounting of all the parts I bought for this project.</p>
+            <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Turbo, Manifold, Intercooler, Pipes, Oil Cooler, etc from Pick-N-Pull (50% off)</td>
+                <td>$250</td>
+              </tr>
+              <tr>
+                <td>Bosch Breakerless Ignition, LH2.2 Harnesses, and Electric Fan from a friend</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>AEM Wideband O2 Sensor</td>
+                <td>$162</td>
+              </tr>
+              <tr>
+                <td>Oil Pan Gasket</td>
+                <td>$13</td>
+              </tr>
+              <tr>
+                <td>10AN Fittings and 10ft of nylon hose</td>
+                <td>$82</td>
+              </tr>
+              <tr>
+                <td>Oil Feed and Drain Line Kit</td>
+                <td>$80</td>
+              </tr>
+              <tr>
+                <td>Boost Gauge</td>
+                <td>$15</td>
+              </tr>
+              <tr>
+                <td>Fuel Injectors</td>
+                <td>$88</td>
+              </tr>
+              <tr>
+                <td>Exhaust Gaskets &amp; Spark Plugs</td>
+                <td>$17</td>
+              </tr>
+              <tr>
+                <td>BSP to AN Fitting Stack</td>
+                <td>$35</td>
+              </tr>
+              <tr>
+                <td>Manual Boost Controller</td>
+                <td>$15</td>
+              </tr>
+              <tr>
+                <td>Oil Sandwich Plate</td>
+                <td>$17</td>
+              </tr>
+              <tr>
+                <td>740 Coolant Hoses with Lines for Turbo</td>
+                <td>$30</td>
+              </tr>
+              <tr>
+                <td>10AN Fittings and 16ft of nylon hose (I should've gotten this kit from the beginning)</td>
+                <td>$120</td>
+              </tr>
+              <tr>
+                <td>K&amp;N Cone Air Filter</td>
+                <td>$27</td>
+              </tr>
+              <tr>
+                <td>More Spark Plugs</td>
+                <td>$10</td>
+              </tr>
+              <tr>
+                <td>3 Bar FPR</td>
+                <td>$13</td>
+              </tr>
+              <tr>
+                <td>Fan Switch</td>
+                <td>$10</td>
+              </tr>
+              <tr>
+                <td>Helicoil Kit (M8)</td>
+                <td>$25</td>
+              </tr>
+              <tr>
+                <td>Bosch Narrowband O2 Sensor</td>
+                <td>$75</td>
+              </tr>
+              <tr>
+                <td>Another 3 Bar FPR</td>
+                <td>$25</td>
+              </tr>
+              <tr>
+                <td>New 740-style Coolant Reservoir</td>
+                <td>$22</td>
+              </tr>
+              <tr>
+                <td>Nissens Radiator</td>
+                <td>$127</td>
+              </tr>
+              <tr>
+                <td>Coolant Temp Gauge</td>
+                <td>$27</td>
+              </tr>
+              <tr>
+                <td>Oil Temp Gauge</td>
+                <td>$12</td>
+              </tr>
+            </tbody>
+            </table>
+            <h1>List of Mistakes</h1> 
+            <p>Here are all the mistakes that we made that you should avoid making:</p>
+            <ul>
+              <li>Not getting the entire factory oil cooler setup from the donor car</li>
+              <li>Not getting the radiator/intercooler bottom rubber mounts from the donor car</li>
+              <li>Not getting the coolant reservoir from the donor car</li>
+              <li>Cutting instead of unplugging the O2 sensor from the donor car</li>
+              <li>Assuming the car's existing harness was compatible with LH2.2 (really, the mistake here is that I didn't know there was a difference between LH2.0 and LH2.2)</li>
+              <li>Not using pipe tape on NPT fittings</li>
+              <li>Not checking the fuel injector grounds to the manifold</li>
+              <li>Not checking the fuel line for kinks</li>
+              <li>Not having the vacuum connections hooked up (or hooked up correctly)</li>
+              <li>Not capping the intake hose IAC port</li>
+              <li>Putting the ignition system in the wrong place, and not giving the fuel computer the tach (coil negative) input</li>
+              <li>Pointing the exhaust at the gas tank (accidentally)</li>
+            </ul>
+<!--             <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div> -->
+            <!-- images for slideshow -->
+<!--            <div id="links">
+              <a href="img/essays/setup.jpg" title="Testing the Speed Graphic"></a>
+              <a href="img/essays/voigtar.jpg" title="Voigtländer Anastigmat Voigtar 105mm f/6.3"></a>
+              <a href="img/essays/162mm.jpg" title="Graphex Optar 162mm f/4.5"></a>
+              <a href="img/essays/135mm.jpg" title="Graphex Optar 135mm f/4.7 Serial No. 788961"></a>
+              <a href="img/essays/135mm-1.jpg" title="Graphex Optar 135mm f/4.7 Serial No. 488003"></a>
+            </div> -->
+          </div>
+        </div>
+    </section><!-- skills -->
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="vegas/jquery.vegas.js"></script> -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/blueimp-gallery.min.js"></script>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    <script>
+      blueimp.Gallery(
+          document.getElementById('links').getElementsByTagName('a'),
+          {
+              container: '#blueimp-gallery',
+              carousel: true
+          }
+      );
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-41729175-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
