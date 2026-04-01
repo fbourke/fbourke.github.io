@@ -1,0 +1,45 @@
+---
+pagination:
+    data: galleries
+    size: 1
+    alias: gallery
+permalink: "gallery/{{ gallery.slug }}/index.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ gallery.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">&larr; Back to Index</a>
+    </nav>
+
+    <header>
+        <h1>{{ gallery.title }}</h1>
+    </header>
+
+    <main class="gallery-grid">
+        {% for photo in gallery.images %}
+            <div class="photo-item">
+                {# This uses the 'image' shortcode from .eleventy.js #}
+                {% image photo.src, "Photo from " + gallery.title %}
+                {# Caption using inline CSS for right-alignment and italics #}
+                <p style="font-style: italic; text-align: right;">
+                    {# Apply filters: 1. Replace underscores with spaces. 2. Remove file extension (e.g., .jpg) #}
+                    {{ photo.name | replace("_", " ") | split(".") | slice(0, -1) | join(".") }}
+                </p>
+
+            </div>
+        {% endfor %}
+    </main>
+
+    <footer>
+        <hr>
+        <p><small>End of {{ gallery.title }} </small></p>
+    </footer>
+</body>
+</html>

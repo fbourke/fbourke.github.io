@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <title>Forrest Bourke</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vegas/jquery.vegas.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav" id="main-menu">
+            <li><a href="#page-welcome">Home</a></li>
+           <!--  <li><a href="#page-profile">Profile</a></li> -->
+            <li><a href="#page-skills">Metrics</a></li>
+            <li><a href="#page-portfolio">Portfolio</a></li>
+            <li><a href="#page-essays">Essays</a></li>
+            <li><a href="#page-contact">Contact</a></li>
+            <li><a href="https://forrestbourke.bigcartel.com/">Store</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- navbar ends -->
+      <!-- welcome begins -->
+    <section id="page-welcome" class="page-welcome">
+      <div>
+          <ul class="slider-controls">
+              <li><a id="vegas-next" class="next" href="#"></a></li>
+              <li><a id="vegas-prev" class="prev" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <header class="centered">
+                    <h1>Forrest Bourke</h1>
+                    <p id="hello">ENGINEER</p>
+                </header>
+                <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/forrest-bourke-87a6998b/" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="https://www.flickr.com/photos/forrestbourke/" class="btn btn-round btn-clear btn-flickr"><i class="fa fa-flickr"></i></a>
+                        <!--  <a href="misc/fbourke_resume.pdf" class="btn btn-round btn-clear btn-resume"><i class="fa fa-book"></i></a> -->
+                        <a href="#page-skills" class="btn btn-round btn-clear btn-arrow"><i class="fa fa-arrow-down"></i></a>
+                    
+                </div>
+                <!-- <a href="#page-contact" class="btn btn-default hire-me">Hire Me</a> -->
+            </div>
+        </div>
+    </section><!-- welcome -->
+       <!-- skills -->
+    <section id="page-skills" class="page-skills">
+      <div class="container skill-percents">
+         <header class="section-header">
+            <h2 class="section-title"><span>Metrics</span></h2>
+              <div class="spacer"></div>
+            <!-- <p class="section-subtitle">NOTE: This website is still under construction. I just like the spinning pie charts.  </p> -->
+        </header>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-1">
+            <span class="chart" data-percent="100" data-places="1">
+              <span class="percent"></span>
+              <h3>Undergraduate Education Completed</h3>
+            </span>
+          </div>
+          <div class="col-md-2 ">
+          <span class="chart" data-percent="0.0978" data-places="4">
+            <span class="percent"></span>
+            <h3>Probability of Death*</h3>
+          </span>
+          </div>
+          <div class="col-md-2">
+          <span class="chart" data-percent="75" data-places="0">
+            <span class="percent"></span>
+            <h3>Making Pie Charts</h3>
+          </span>
+          </div>
+          <div class="col-md-2">
+          <span class="chart" data-percent="85" data-places="4">
+            <span class="percent"></span>
+            <h3>Significant Figures</h3>
+          </span>
+          </div>
+          <div class="col-md-2">
+          <span class="chart" data-percent="110" data-places="0">
+            <span class="percent"></span>
+            <h3>Meaningless Metrics</h3>
+          </span>
+          </div>
+        </div>
+        <div class="row issue-row">
+          <p>*According to Social Security Administration actuarial tables</p>
+        </div>
+      </div>
+    </section><!-- skills -->
+    <!-- portfolio begins -->
+    <section id="page-portfolio" class="page-portfolio">
+          <div class="container">
+            <div class="row">
+                <header class="section-header">
+                    <h2 class="section-title"><span>Portfolio</span></h2>
+                      <div class="spacer"></div>
+                    <p class="section-subtitle">Here are a few projects I've worked on. Click a thumbnail for more pictures and a short description.</p>
+                </header>
+           
+                <!-- <div id="grid-controls-wrapper">
+                <ul class="nav nav-pills center-pills grid-controls">
+                  <li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a></li>
+                  <li class="filter" ><a href="javascript:void(0)" data-filter=".electrical">Electrical</a></li>   
+                  <li class="filter" ><a href="javascript:void(0)" data-filter=".mechanical">Mechanical</a></li>            
+                  <!--<li class="filter"><a href="javascript:void(0)"  data-filter=".other">Other</a></li>
+                </ul>
+              </div>
+             -->
+                <div>
+                  <ul id="grid" class="grid-wrapper">
+                      <li class="mix electrical mechanical" >
+                      <a data-toggle="modal" data-target="#theremin"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/theremin/theremin01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#power"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/power/power03s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#rwm"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/rwm/rwm01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical mechanical" >
+                       <a data-toggle="modal" data-target="#scanner"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/scanner/scanner01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical mechanical" >
+                       <a data-toggle="modal" data-target="#quad"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/quad/quad03s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical mechanical" >
+                       <a data-toggle="modal" data-target="#shop"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/shop/shop01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical mechanical" >
+                       <a data-toggle="modal" data-target="#cannon"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/cannon/cannon01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#latch"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/latch/latch01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#up"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/up/up01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#tyga"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/tyga/tyga9001s.png" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#blue"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/blue/01.png" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#droid"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/droid/01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#wack"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/wack/wack01s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#apple"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/apple/02s.jpg" alt="" >
+                      </a> </li>
+                      <li class="mix electrical" >
+                       <a data-toggle="modal" data-target="#photo"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/photo/01s.jpg" alt="" >
+                      </a> </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="modal fade" id="theremin" tabindex="-1" role="dialog" aria-labelledby="Theremin" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/theremin/theremin01w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Theremin (Fall 2012)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/theremin/theremin02.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/theremin/theremin02s.jpg" alt="" /></a>
+                      <p>For Olin's Modeling and Control class, I build a functional RF theremin. If you're not familiar with theremins, you can see a professional theremin being played on <a href="http://www.youtube.com/watch?feature=player_detailpage&v=Bkp9bDGDd1w#t=147">YouTube</a>. I wasn't able to build it on a breadboard due to its exreme sensitivity to stray parasitic capacitance, so the circuit needed to be dead-bugged on a piece of copper clad. I designed and laser cut a box out of MDF for the theremin, as I wanted a polished final product. Due to funding cuts, I spent an inordinate amount of time making knobs out of brass on the lathe. The final deliverable was a report, and you can download the PDF <a href="img/portfolio/theremin/theremin.pdf">here</a>.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="power" tabindex="-1" role="dialog" aria-labelledby="Power" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/power/power04w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Power Amplifiers</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/power/power02.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/power/power02s.jpg" alt="" /></a>
+                      <p>I've made a of couple power amplifiers - the first was free-soldered with the LM3886 chip. I used free samples from National Semiconductor (before it was acquired by TI) to build it and most subsequent amplifiers. To get the free samples, I acquired a free domain, and set up emails for sample accounts. For my second power amplifier, I designed a PCB for the LM4780 and sent it to <a href="https://oshpark.com/">OSH Park</a> for fabrication. The second power amp is housed in a laser-cut baltic birch case, with a LED-illuminated laser-engraved acrylic faceplate and a 21-step attenuator for better channel balance than a standard potentiometer. Most of my power amplifiers have been powered by toroidal transformers, acquired at my favorite surplus store, <a href="http://www.apexelectronic.com/">Apex Electronics</a> in Sun Valley, CA.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="rwm" tabindex="-1" role="dialog" aria-labelledby="rwm" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/rwm/rwm01w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Laser Rangefinder (Spring 2013)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/rwm/rwm02.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/rwm/rwm02s.jpg" alt="" /></a>
+                      <p>For Olin's <a href="rwm.olin.edu">Real World Measurements</a> class, a team and I designed the optics and circuitry for a laser rangefinder. It was designed to send out a pulse from an infrared laser, then measure the time it takes for the pulse to be returned and detected using a photodiode. Avalanche photodiodes are commonly used for this, as they have high gain and fast response times, but our budget did not allow us to use an avalanche photodiode. We used a 22μS-resolution timer chip, and the team had to learn to use Olin's reflow oven to solder the QFN package. Unfortunately, the project failed due to problems with the firmware, as well as optical alignment issues.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="scanner" tabindex="-1" role="dialog" aria-labelledby="scanner" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/scanner/scanner03w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">3D Scanner (Fall 2013)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/scanner/scanner04.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/scanner/scanner04s.jpg" alt="" /></a>
+                      <p>In Principles of Engineering, before doing the <a href="confectionerycannon.com">final project</a>, I made a 3D scanner with a partner. We designed and 3D-printed a pan-tilt gimbal, with an excessive bearing (which, despite being 3D-printed, was a very good press fit) to support the sensor. In the image above, you can see the scanner facing a mug with some chopsticks. The image to the left is the scan of the chopsticks, with the colors corresponding to the distance (click for a larger size).
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="quad" tabindex="-1" role="dialog" aria-labelledby="quad" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/quad/quad06w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Flying Machines!</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/quad/quad03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/quad/quad03s.jpg" alt="" /></a>
+                      <p>I built a hexcopter around the RCT800 platform. It uses six 12" or 14" carbon fiber propellers and an Arduflyer 2.5 flight controller (with an external GPS). The booms are injection molded plastic and I've added carbon fiber landing gear to mount a <a href="http://www.rctimer.com/product_884.html">brushless gimbal</a>, which is great for filming from the air. 
+                      </p>
+                      <p>
+                      Here's a short video I filmed for Olin's Baja team: <a href="https://www.youtube.com/watch?v=PEYRwyplQ0o">Olin Baja December</a>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="shop" tabindex="-1" role="dialog" aria-labelledby="shop" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/shop/shop04w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Machine Shop Projects</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/shop/shop03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/shop/shop03s.jpg" alt="" /></a>
+                      <p>For an electrical engineer, I've spent quite a bit of time in the machine shop. I used a combination of brazing and TIG welding turn hammered sheets of copper into a rose. The widget in the preview image is turned from aluminium; instead of using a die to make the threads on the front, I used a single-point threading tool and the gearing on the lathe to make the threads.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="cannon" tabindex="-1" role="dialog" aria-labelledby="cannon" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/cannon/cannon04w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">The Confectionery Cannon (Fall 2013)</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/cannon/cannon03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/cannon/cannon03s.jpg" alt="" /></a>
+                      <p>With a team of four, I built a face-tracking pneumatic marshmallow launcher. It uses OpenCV and Python to find faces, then comminicates with a microcontroller to fire the marshmallows and reload itself. You can read more at <a href="http://confectionerycannon.com">confectionerycannon.com</a>, which I designed and </p>
+                      <p>We've been featured on:
+                      <ul>
+                        <li><a href="tinyurl.com/ccannon-hackaday">Hackaday</a></li>
+                        <li><a href="tinyurl.com/ccannon-gizmodo">Gizmodo</a></li>
+                        <li><a href="http://watch.discoverychannel.ca/#clip1063900">Discovery Channel Canada on TV</a></li>
+                        <li><a href="http://news.discovery.com/tech/gear-and-gadgets/bullseye-face-tracking-marshmallow-cannon-140114.htm">Discovery Channel USA</a></li>
+                        <li><a href="http://www.foxnews.com/tech/2014/01/15/why-google-paid-billions-for-nest/">Fox News</a></li>
+                        <li><a href="http://www.bostonmagazine.com/news/blog/2014/01/14/olin-college-confectionery-cannon-video/">Boston Magazine</a></li>
+                        <li><a href="http://www.geek.com/news/face-tracking-confectionery-cannon-delivers-the-goods-with-135psi-1582675/">Geek.com</a></li>
+                        <li><a href="https://atmelcorporation.wordpress.com/2014/01/15/video-this-confectionery-cannon-fires-marshmallows">Atmel Embedded Design Blog</a></li>
+                        <li><a href="http://thenextweb.com/shareables/2014/01/20/four-students-built-face-tracking-marshmallow-cannon/#!wZMPg">The Next Web</a></li>
+                      </ul></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="latch" tabindex="-1" role="dialog" aria-labelledby="latch" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/latch/latch04w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Vacuum Tube SR Latch</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/latch/latch03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/latch/latch03s.jpg" alt="" /></a>
+                      <p>In Computer Architecture class, I designed and built a basic element of computer logic using vacuum tubes with a partner. Our writeup of the project is on the <a href="http://wikis.olin.edu/ca/doku.php?id=2014:vacuum_tube_sr_latch">CompArch Website,</a> where we talk in extensive detail about the circuit's design and functionality, in addition to providing tips to other students looking to continue our work or work in a similar area.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="up" tabindex="-1" role="dialog" aria-labelledby="up" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/up/up01w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Jawbone Intern, Advanced Projects Division</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>As an intern on Jawbone's Advanced Projects team, I assited with testing and bring up of the revolutionary bioimpedance sensors in the <a href="http://jawbone.com/store/buy/up3">UP3</a> in addition to other responsibilites involving hardware, firmware, and general prototyping for future Jawbone products and concepts.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="tyga" tabindex="-1" role="dialog" aria-labelledby="tyga" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/tyga/tyga9001.png" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Mixed Analog and Digital VLSI: Tunable Gain Amplifier</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>In Olin's VLSI class, my team of three designed a stereo amplifier whose gain can be digitally adjusted via a SPI interface. Even including the fairly large output transistors, we had room to include our faces on the chip. Once the IC gets fabricated (estimated Spring 2015), we will be (as far as we can tell) the only people in the world with our pictures on an integrated circuit!
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="blue" tabindex="-1" role="dialog" aria-labelledby="blue" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/blue/02w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Custom Active Studio Monitors</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/blue/03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/blue/03s.jpg" alt="" /></a>
+                      <p>I built a pair of speakers out of 1/2" MDF, and designed an active amplifier circuit. I haven't completed the active crossover yet, but running the speakers with simple passive crossovers sounds pretty good! They're excruciatingly finished in "glacer white" automotive paint and clear coat, with a laser-cut backplate concealing the amplifiers.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="droid" tabindex="-1" role="dialog" aria-labelledby="droid" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/droid/02w.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Droideka Rolling Robot</h4>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/portfolio/droid/03.jpg"><img class="pull-left img-responsive img-thumbnail" src="img/portfolio/droid/03s.jpg" alt="" /></a>
+                      <p>At MakeMIT 2013, my team won 3rd place in the second round with our bluetooth- and wifi-controlled rolling robot. I was responsible for the electrical system, the music, and running around excitedly. 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="wack" tabindex="-1" role="dialog" aria-labelledby="droid" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <img class="img-responsive portfolio-description-imge" src="img/portfolio/wack/wack02.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Wack-A-Mole</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>For Elecanisms (Spring 2015), my team built a Wack-A-Mole game where the moles run away from the player. More info is on the website the team created for the project: <a href="http://forrestbourke.com/elecanisms/">fbourke.github.io/elecanisms/</a> or by viewing our <a href="https://www.youtube.com/watch?v=3j-_X7gOFWI">YouTube video.</a>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="apple" tabindex="-1" role="dialog" aria-labelledby="droid" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Apple Hardware Engineering Intern</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>The summer of 2015, I was an engineering intern at Apple. Unfortunately, most of my work is covered under a strict NDA, but I was working on analog electronics design as well as assorted prototyping. 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+          <div class="modal fade" id="photo" tabindex="-1" role="dialog" aria-labelledby="droid" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+              <div class="hz-divider medium"></div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img class="img-responsive portfolio-description-imge" src="img/portfolio/photo/01.jpg" alt="" />
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Analog Photography</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>I enjoy analog photography using a variety of media. I hand-process all of my black and white film, including 35mm, 120 (medium format) and 4x5" (large format). More of my work is found on my <a href="https://www.flickr.com/photos/forrestbourke/">Flickr profile.</a>
+                      </p> <p>In Fall 2015, I made a series of close-up portraits with my Speed Graphic on Kodalith film for my Arts and Humanities capstone project. The image above is one in the series, and more examples are <a href="https://www.flickr.com/photos/forrestbourke/23182782320/in/dateposted-public/">on Flickr</a>.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- end modal -->
+    </section><!-- portfolio ends -->
+    <!-- essays begins -->
+    <section id="page-essays" class="page-essays">
+       <div class="container skill-percents">
+        <header class="section-header">
+            <h2 class="section-title"><span>Essays</span></h2>
+              <div class="spacer"></div>
+            <p class="section-subtitle">This section is for random things I might want to write. Essay is probably too grand a term.  </p>
+            <p><a href="shutter.html">Shutter Testing</a></p>
+            <p><a href="diana.html">Diana F vs Diana F+</a></p>
+            <p><a href="turbo.html">Installing a Junkyard Turbo in my 1984 Volvo 245</a></p>
+            <!-- <p><a href="two.html">Two</a></p> -->
+        </header>
+    </div>
+    </section><!-- essays -->
+    <!-- contact begins -->
+    <section id="page-contact" class="page-contact">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title"><span>Contact</span></h2>
+            <div class="spacer contact-spacer"></div>
+              <p class="section-subtitle" id="contact-subtitle"></p>
+        </header>
+        <div class="row">
+          <div class="col-sm-5 contact-info">
+            <h3>Contact Info</h3>
+            <!-- <p><i class="fa fa-map-marker"></i> 1000 Olin Way, MB107, Needham, MA  02492 </p> -->
+            <p><i class="fa fa-phone"></i> (818) 397-1143 </p>
+            <p><i class="fa fa-envelope-o"></i> <a href="mailto:4a19c76a@opayq.com">Email Me</a> </p>
+            <p><i class="fa fa-book"></i> Download a <a href="misc/fbourke_resume.pdf">PDF of my Resume</a></p>
+          </div>
+          
+          <div class="col-sm-7">
+            <div id="contact-replacement">
+              <h3 id="contact-form-thing-1">Get in Touch</h3>
+              <form  class="form-horizontal" id="contact-form" target="_parent" onSubmit="return false;">
+                <div class="control-group">
+                  <label class="control-label" for="name">Name</label>
+                  <div class="controls">
+                      <input type="text" name="name" id="name" placeholder="Your name" class="form-control input-lg ">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="email">Email Address</label>
+                  <div class="controls">
+                      <input type="text" name="email" id="email" placeholder="Your email address" class="form-control input-lg">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="message">Message</label>
+                  <div class="controls">
+                      <textarea name="message" id="message" rows="8" class="form-control input-lg"></textarea>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-default btn-lg btn-block" id="contact-submit">Submit Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div><!-- End row -->
+      </div>
+    </section> <!-- contact ends -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vegas/jquery.vegas.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-41729175-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+  </body>
+</html>
