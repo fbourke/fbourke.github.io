@@ -17,12 +17,15 @@ for IMG_DIR in "$@"; do
     fi
 
     # Clean up the folder name to use for the output file and the page title
-    # (e.g., "gallery_images/" becomes "gallery_images")
+    # (e.g., "posts/airports" becomes "airports")
     CLEAN_DIR=$(basename "$IMG_DIR")
-    OUTPUT="${CLEAN_DIR}.html"
+    OUTPUT="${IMG_DIR}/${CLEAN_DIR}.html"
     
     # Replace underscores/dashes with spaces for the <h1> title
     PAGE_TITLE=$(echo "$CLEAN_DIR" | tr '_-' ' ')
+    if [ "$CLEAN_DIR" = "airports" ]; then
+        PAGE_TITLE="Airplanes and Airports"
+    fi # lol I love how the AI generated this special case
 
     echo "Scanning '$IMG_DIR' and generating $OUTPUT..."
 
@@ -34,12 +37,12 @@ for IMG_DIR in "$@"; do
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link type="text/css" href="main.css" rel="stylesheet" />
-	<title>Gallery: $PAGE_TITLE</title>
+	<link type="text/css" href="../../main.css" rel="stylesheet" />
+	<title>Photo Essay: $PAGE_TITLE</title>
 </head>
 <body>
-	<a href="index.html"> Back to index </a> <hr>
-	<h1>Gallery: $PAGE_TITLE</h1>
+	<a href="../../index.html"> Back to index </a> <hr>
+	<h1>Photo Essay: $PAGE_TITLE</h1>
 EOF
 
     # Enable nullglob so the loop doesn't fail if the folder has no images
@@ -61,7 +64,7 @@ EOF
         
         # Append the image block to the HTML file
         cat << EOF >> "$OUTPUT"
-	<img src="$filepath" alt="$clean_title">
+	<img src="$filename" alt="$clean_title">
 	<div style="text-align: right"><i>$clean_title</i></div>
 	<br><br>
 EOF
