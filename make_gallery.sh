@@ -38,6 +38,7 @@ for IMG_DIR in "$@"; do
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="text/css" href="../../main.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../../img/apple-touch-icon.png" />
 	<title>Photo Essay: $PAGE_TITLE</title>
 </head>
 <body>
