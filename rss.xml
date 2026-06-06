@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forrest Bourke Dot Com</title>
+    <link>https://fbourke.github.io/</link>
+    <description>Recent posts from Forrest Bourke's website.</description>
+    <language>en-us</language>
+    <atom:link href="https://fbourke.github.io/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <ttl>720</ttl>
+
+    <item>
+      <title>Audioengine A2 Speaker Repair</title>
+      <link>https://fbourke.github.io/posts/audioengine_repair/audioengine_repair.html</link>
+      <guid>https://fbourke.github.io/posts/audioengine_repair/audioengine_repair.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Repair notes for the Audioengine A2 desktop speaker.</description>
+    </item>
+
+    <item>
+      <title>Canon AE-1 Review</title>
+      <link>https://fbourke.github.io/posts/ae1/ae1.html</link>
+      <guid>https://fbourke.github.io/posts/ae1/ae1.html</guid>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <description>A personal review of the Canon AE-1 film camera.</description>
+    </item>
+
+    <item>
+      <title>Johor Bahru</title>
+      <link>https://fbourke.github.io/posts/johor_bahru/johor_bahru.html</link>
+      <guid>https://fbourke.github.io/posts/johor_bahru/johor_bahru.html</guid>
+      <pubDate>Fri, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <description>A photo essay from Johor Bahru.</description>
+    </item>
+
+    <item>
+      <title>Airplanes and Airports</title>
+      <link>https://fbourke.github.io/posts/airports/airports.html</link>
+      <guid>https://fbourke.github.io/posts/airports/airports.html</guid>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <description>A photo essay documenting airplanes and airports.</description>
+    </item>
+
+    <item>
+      <title>Polaroid I2 Reverse Engineering</title>
+      <link>https://fbourke.github.io/posts/i2/polaroid_i2.html</link>
+      <guid>https://fbourke.github.io/posts/i2/polaroid_i2.html</guid>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
+      <description>Reverse engineering and repair notes for the Polaroid I-2 camera.</description>
+    </item>
+
+    <item>
+      <title>Junkyard Turbo 1984 Volvo 245</title>
+      <link>https://fbourke.github.io/posts/turbo/volvo_turbo.html</link>
+      <guid>https://fbourke.github.io/posts/turbo/volvo_turbo.html</guid>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <description>A junkyard turbo swap and build story for a 1984 Volvo 245.</description>
+    </item>
+
+    <item>
+      <title>Diana F Cameras</title>
+      <link>https://fbourke.github.io/posts/diana.html</link>
+      <guid>https://fbourke.github.io/posts/diana.html</guid>
+      <pubDate>Sat, 26 Mar 2016 00:00:00 +0000</pubDate>
+      <description>Notes on the Diana F and Diana F+ toy cameras.</description>
+    </item>
+
+    <item>
+      <title>Film Camera Shutters</title>
+      <link>https://fbourke.github.io/posts/shutter.html</link>
+      <guid>https://fbourke.github.io/posts/shutter.html</guid>
+      <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
+      <description>A write-up about film camera shutter mechanisms.</description>
+    </item>
+  </channel>
+</rss>
