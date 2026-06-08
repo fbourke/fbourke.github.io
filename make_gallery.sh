@@ -29,6 +29,9 @@ for IMG_DIR in "$@"; do
 
     echo "Scanning '$IMG_DIR' and generating $OUTPUT..."
 
+    # Generate today's date in format: DD MMM YYYY (month in uppercase), e.g. 07 JUN 2026
+    DATE_FMT=$(date '+%d %b %Y' | awk '{print $1, toupper($2), $3}')
+
     # 1. Write the top half of the HTML file
     # We use unquoted EOF here so variables like $PAGE_TITLE expand properly
     cat << EOF > "$OUTPUT"
@@ -44,6 +47,10 @@ for IMG_DIR in "$@"; do
 <body>
 	<a href="../../index.html"> Back to index </a> <hr>
 	<h1>Photo Essay: $PAGE_TITLE</h1>
+    <code>Latest Update: $DATE_FMT</code>
+    <h3> Intro </h3>
+    <p>Write a short introduction about this photoset here. Replace this placeholder with your own notes describing the shoot, location, or context.</p>
+    <p>Camera/format notes: e.g. "The panoramas below are captured with the Horizon Perfekt, and the square images with the Yashica Mat-124G."</p>
 EOF
 
     # Enable nullglob so the loop doesn't fail if the folder has no images
